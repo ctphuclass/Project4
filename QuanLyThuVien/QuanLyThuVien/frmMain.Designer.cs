@@ -32,56 +32,56 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.btnRThanhVien = new System.Windows.Forms.Button();
+            this.btnRTraSach = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.btnTimSach = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnMSQH = new System.Windows.Forms.Button();
+            this.btnLuotMuon = new System.Windows.Forms.Button();
+            this.btnSCM = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnPhieuTra = new System.Windows.Forms.Button();
+            this.btnPhieuMuon = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnTTS = new System.Windows.Forms.Button();
+            this.btnTTTTV = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnThongTinNV = new System.Windows.Forms.Button();
+            this.btnDoiMK1 = new System.Windows.Forms.Button();
+            this.btnThongTinBanThan = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnThongTin = new System.Windows.Forms.Button();
-            this.btnDoiMK = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.BtnDangXuat = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnDSNV = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.btnDoiMK = new System.Windows.Forms.Button();
+            this.btnThongTin = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.tabPage5.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +103,49 @@
             this.tabPage5.Text = "Reports";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.btnRThanhVien);
+            this.groupBox8.Controls.Add(this.btnRTraSach);
+            this.groupBox8.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox8.Location = new System.Drawing.Point(0, 21);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(189, 97);
+            this.groupBox8.TabIndex = 6;
+            this.groupBox8.TabStop = false;
+            // 
+            // btnRThanhVien
+            // 
+            this.btnRThanhVien.BackColor = System.Drawing.Color.White;
+            this.btnRThanhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRThanhVien.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnRThanhVien.Image = ((System.Drawing.Image)(resources.GetObject("btnRThanhVien.Image")));
+            this.btnRThanhVien.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRThanhVien.Location = new System.Drawing.Point(96, 13);
+            this.btnRThanhVien.Name = "btnRThanhVien";
+            this.btnRThanhVien.Size = new System.Drawing.Size(87, 81);
+            this.btnRThanhVien.TabIndex = 2;
+            this.btnRThanhVien.Text = "                                                 Reports Thành Viên";
+            this.btnRThanhVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRThanhVien.UseCompatibleTextRendering = true;
+            this.btnRThanhVien.UseVisualStyleBackColor = false;
+            // 
+            // btnRTraSach
+            // 
+            this.btnRTraSach.BackColor = System.Drawing.Color.White;
+            this.btnRTraSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRTraSach.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnRTraSach.Image = ((System.Drawing.Image)(resources.GetObject("btnRTraSach.Image")));
+            this.btnRTraSach.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRTraSach.Location = new System.Drawing.Point(3, 13);
+            this.btnRTraSach.Name = "btnRTraSach";
+            this.btnRTraSach.Size = new System.Drawing.Size(87, 81);
+            this.btnRTraSach.TabIndex = 1;
+            this.btnRTraSach.Text = "                                                 Reports Trả Sách";
+            this.btnRTraSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRTraSach.UseCompatibleTextRendering = true;
+            this.btnRTraSach.UseVisualStyleBackColor = false;
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.groupBox7);
@@ -112,6 +155,32 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Tìm Kiếm";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.btnTimSach);
+            this.groupBox7.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox7.Location = new System.Drawing.Point(3, 21);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(98, 97);
+            this.groupBox7.TabIndex = 6;
+            this.groupBox7.TabStop = false;
+            // 
+            // btnTimSach
+            // 
+            this.btnTimSach.BackColor = System.Drawing.Color.White;
+            this.btnTimSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimSach.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnTimSach.Image = ((System.Drawing.Image)(resources.GetObject("btnTimSach.Image")));
+            this.btnTimSach.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTimSach.Location = new System.Drawing.Point(5, 10);
+            this.btnTimSach.Name = "btnTimSach";
+            this.btnTimSach.Size = new System.Drawing.Size(87, 81);
+            this.btnTimSach.TabIndex = 2;
+            this.btnTimSach.Text = "                                                 Thông Tin Sách";
+            this.btnTimSach.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTimSach.UseCompatibleTextRendering = true;
+            this.btnTimSach.UseVisualStyleBackColor = false;
             // 
             // tabPage3
             // 
@@ -124,6 +193,109 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mượn Trả";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.btnMSQH);
+            this.groupBox6.Controls.Add(this.btnLuotMuon);
+            this.groupBox6.Controls.Add(this.btnSCM);
+            this.groupBox6.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox6.Location = new System.Drawing.Point(213, 18);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(280, 97);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            // 
+            // btnMSQH
+            // 
+            this.btnMSQH.BackColor = System.Drawing.Color.White;
+            this.btnMSQH.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMSQH.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnMSQH.Image = ((System.Drawing.Image)(resources.GetObject("btnMSQH.Image")));
+            this.btnMSQH.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMSQH.Location = new System.Drawing.Point(189, 13);
+            this.btnMSQH.Name = "btnMSQH";
+            this.btnMSQH.Size = new System.Drawing.Size(87, 81);
+            this.btnMSQH.TabIndex = 3;
+            this.btnMSQH.Text = "                                                 Mượn Sách Quá Hạn";
+            this.btnMSQH.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMSQH.UseCompatibleTextRendering = true;
+            this.btnMSQH.UseVisualStyleBackColor = false;
+            // 
+            // btnLuotMuon
+            // 
+            this.btnLuotMuon.BackColor = System.Drawing.Color.White;
+            this.btnLuotMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuotMuon.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnLuotMuon.Image = ((System.Drawing.Image)(resources.GetObject("btnLuotMuon.Image")));
+            this.btnLuotMuon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLuotMuon.Location = new System.Drawing.Point(96, 13);
+            this.btnLuotMuon.Name = "btnLuotMuon";
+            this.btnLuotMuon.Size = new System.Drawing.Size(87, 81);
+            this.btnLuotMuon.TabIndex = 2;
+            this.btnLuotMuon.Text = "                                                 Lượt Mượn";
+            this.btnLuotMuon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnLuotMuon.UseCompatibleTextRendering = true;
+            this.btnLuotMuon.UseVisualStyleBackColor = false;
+            // 
+            // btnSCM
+            // 
+            this.btnSCM.BackColor = System.Drawing.Color.White;
+            this.btnSCM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSCM.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnSCM.Image = ((System.Drawing.Image)(resources.GetObject("btnSCM.Image")));
+            this.btnSCM.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSCM.Location = new System.Drawing.Point(3, 13);
+            this.btnSCM.Name = "btnSCM";
+            this.btnSCM.Size = new System.Drawing.Size(87, 81);
+            this.btnSCM.TabIndex = 1;
+            this.btnSCM.Text = "                                                 Sách Chưa Mượn";
+            this.btnSCM.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSCM.UseCompatibleTextRendering = true;
+            this.btnSCM.UseVisualStyleBackColor = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnPhieuTra);
+            this.groupBox5.Controls.Add(this.btnPhieuMuon);
+            this.groupBox5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox5.Location = new System.Drawing.Point(6, 18);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(187, 97);
+            this.groupBox5.TabIndex = 4;
+            this.groupBox5.TabStop = false;
+            // 
+            // btnPhieuTra
+            // 
+            this.btnPhieuTra.BackColor = System.Drawing.Color.White;
+            this.btnPhieuTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhieuTra.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnPhieuTra.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuTra.Image")));
+            this.btnPhieuTra.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPhieuTra.Location = new System.Drawing.Point(96, 13);
+            this.btnPhieuTra.Name = "btnPhieuTra";
+            this.btnPhieuTra.Size = new System.Drawing.Size(87, 81);
+            this.btnPhieuTra.TabIndex = 2;
+            this.btnPhieuTra.Text = "                                                 Phiếu Trả";
+            this.btnPhieuTra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPhieuTra.UseCompatibleTextRendering = true;
+            this.btnPhieuTra.UseVisualStyleBackColor = false;
+            // 
+            // btnPhieuMuon
+            // 
+            this.btnPhieuMuon.BackColor = System.Drawing.Color.White;
+            this.btnPhieuMuon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhieuMuon.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnPhieuMuon.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuMuon.Image")));
+            this.btnPhieuMuon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPhieuMuon.Location = new System.Drawing.Point(3, 13);
+            this.btnPhieuMuon.Name = "btnPhieuMuon";
+            this.btnPhieuMuon.Size = new System.Drawing.Size(87, 81);
+            this.btnPhieuMuon.TabIndex = 1;
+            this.btnPhieuMuon.Text = "                                                 Phiếu Mượn";
+            this.btnPhieuMuon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPhieuMuon.UseCompatibleTextRendering = true;
+            this.btnPhieuMuon.UseVisualStyleBackColor = false;
             // 
             // tabPage2
             // 
@@ -138,6 +310,109 @@
             this.tabPage2.Text = "Quản Lý";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.btnTTS);
+            this.groupBox4.Controls.Add(this.btnTTTTV);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox4.Location = new System.Drawing.Point(299, 18);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(189, 97);
+            this.groupBox4.TabIndex = 5;
+            this.groupBox4.TabStop = false;
+            // 
+            // btnTTS
+            // 
+            this.btnTTS.BackColor = System.Drawing.Color.White;
+            this.btnTTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTTS.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnTTS.Image = ((System.Drawing.Image)(resources.GetObject("btnTTS.Image")));
+            this.btnTTS.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTTS.Location = new System.Drawing.Point(96, 13);
+            this.btnTTS.Name = "btnTTS";
+            this.btnTTS.Size = new System.Drawing.Size(87, 81);
+            this.btnTTS.TabIndex = 2;
+            this.btnTTS.Text = "                                                 Thông Tin Sách";
+            this.btnTTS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTTS.UseCompatibleTextRendering = true;
+            this.btnTTS.UseVisualStyleBackColor = false;
+            // 
+            // btnTTTTV
+            // 
+            this.btnTTTTV.BackColor = System.Drawing.Color.White;
+            this.btnTTTTV.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTTTTV.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnTTTTV.Image = ((System.Drawing.Image)(resources.GetObject("btnTTTTV.Image")));
+            this.btnTTTTV.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTTTTV.Location = new System.Drawing.Point(3, 13);
+            this.btnTTTTV.Name = "btnTTTTV";
+            this.btnTTTTV.Size = new System.Drawing.Size(87, 81);
+            this.btnTTTTV.TabIndex = 1;
+            this.btnTTTTV.Text = "                                                 Thông Tin Thẻ Thư Viện";
+            this.btnTTTTV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTTTTV.UseCompatibleTextRendering = true;
+            this.btnTTTTV.UseVisualStyleBackColor = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnThongTinNV);
+            this.groupBox2.Controls.Add(this.btnDoiMK1);
+            this.groupBox2.Controls.Add(this.btnThongTinBanThan);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox2.Location = new System.Drawing.Point(3, 18);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(280, 97);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnThongTinNV
+            // 
+            this.btnThongTinNV.BackColor = System.Drawing.Color.White;
+            this.btnThongTinNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTinNV.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnThongTinNV.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTinNV.Image")));
+            this.btnThongTinNV.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThongTinNV.Location = new System.Drawing.Point(189, 13);
+            this.btnThongTinNV.Name = "btnThongTinNV";
+            this.btnThongTinNV.Size = new System.Drawing.Size(87, 81);
+            this.btnThongTinNV.TabIndex = 3;
+            this.btnThongTinNV.Text = "                                                 Thông Tin Nhân Viên";
+            this.btnThongTinNV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThongTinNV.UseCompatibleTextRendering = true;
+            this.btnThongTinNV.UseVisualStyleBackColor = false;
+            // 
+            // btnDoiMK1
+            // 
+            this.btnDoiMK1.BackColor = System.Drawing.Color.White;
+            this.btnDoiMK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMK1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnDoiMK1.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMK1.Image")));
+            this.btnDoiMK1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDoiMK1.Location = new System.Drawing.Point(96, 13);
+            this.btnDoiMK1.Name = "btnDoiMK1";
+            this.btnDoiMK1.Size = new System.Drawing.Size(87, 81);
+            this.btnDoiMK1.TabIndex = 2;
+            this.btnDoiMK1.Text = "                                                 Đổi Mật Khẩu";
+            this.btnDoiMK1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDoiMK1.UseCompatibleTextRendering = true;
+            this.btnDoiMK1.UseVisualStyleBackColor = false;
+            // 
+            // btnThongTinBanThan
+            // 
+            this.btnThongTinBanThan.BackColor = System.Drawing.Color.White;
+            this.btnThongTinBanThan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTinBanThan.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnThongTinBanThan.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTinBanThan.Image")));
+            this.btnThongTinBanThan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThongTinBanThan.Location = new System.Drawing.Point(3, 13);
+            this.btnThongTinBanThan.Name = "btnThongTinBanThan";
+            this.btnThongTinBanThan.Size = new System.Drawing.Size(87, 81);
+            this.btnThongTinBanThan.TabIndex = 1;
+            this.btnThongTinBanThan.Text = "                                                 Thông Tin Bản Thân";
+            this.btnThongTinBanThan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThongTinBanThan.UseCompatibleTextRendering = true;
+            this.btnThongTinBanThan.UseVisualStyleBackColor = false;
+            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
@@ -151,65 +426,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Trang Chính";
             // 
-            // btnThongTin
-            // 
-            this.btnThongTin.BackColor = System.Drawing.Color.White;
-            this.btnThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTin.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnThongTin.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTin.Image")));
-            this.btnThongTin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnThongTin.Location = new System.Drawing.Point(3, 13);
-            this.btnThongTin.Name = "btnThongTin";
-            this.btnThongTin.Size = new System.Drawing.Size(87, 81);
-            this.btnThongTin.TabIndex = 1;
-            this.btnThongTin.Text = "                                                 Thông Tin Bản Thân";
-            this.btnThongTin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnThongTin.UseCompatibleTextRendering = true;
-            this.btnThongTin.UseVisualStyleBackColor = false;
-            // 
-            // btnDoiMK
-            // 
-            this.btnDoiMK.BackColor = System.Drawing.Color.White;
-            this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMK.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnDoiMK.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMK.Image")));
-            this.btnDoiMK.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDoiMK.Location = new System.Drawing.Point(96, 13);
-            this.btnDoiMK.Name = "btnDoiMK";
-            this.btnDoiMK.Size = new System.Drawing.Size(87, 81);
-            this.btnDoiMK.TabIndex = 2;
-            this.btnDoiMK.Text = "                                                 Đổi Mật Khẩu";
-            this.btnDoiMK.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDoiMK.UseCompatibleTextRendering = true;
-            this.btnDoiMK.UseVisualStyleBackColor = false;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(598, 149);
-            this.tabControl1.TabIndex = 1;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnDSNV);
-            this.groupBox1.Controls.Add(this.btnDoiMK);
-            this.groupBox1.Controls.Add(this.btnThongTin);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(6, 18);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 97);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tài Khoản";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button9);
@@ -222,6 +438,22 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Hệ Thống";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button9.Location = new System.Drawing.Point(189, 14);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(87, 81);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "                                                 Hướng Dẫn";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button9.UseCompatibleTextRendering = true;
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // BtnDangXuat
             // 
@@ -256,6 +488,19 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnDSNV);
+            this.groupBox1.Controls.Add(this.btnDoiMK);
+            this.groupBox1.Controls.Add(this.btnThongTin);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.Location = new System.Drawing.Point(6, 18);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(280, 97);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tài Khoản";
+            // 
             // btnDSNV
             // 
             this.btnDSNV.BackColor = System.Drawing.Color.White;
@@ -272,298 +517,51 @@
             this.btnDSNV.UseCompatibleTextRendering = true;
             this.btnDSNV.UseVisualStyleBackColor = false;
             // 
-            // groupBox2
+            // btnDoiMK
             // 
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox2.Location = new System.Drawing.Point(3, 18);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 97);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
+            this.btnDoiMK.BackColor = System.Drawing.Color.White;
+            this.btnDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiMK.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnDoiMK.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMK.Image")));
+            this.btnDoiMK.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDoiMK.Location = new System.Drawing.Point(96, 13);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.Size = new System.Drawing.Size(87, 81);
+            this.btnDoiMK.TabIndex = 2;
+            this.btnDoiMK.Text = "                                                 Đổi Mật Khẩu";
+            this.btnDoiMK.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDoiMK.UseCompatibleTextRendering = true;
+            this.btnDoiMK.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnThongTin
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(189, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 81);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "                                                 Thông Tin Nhân Viên";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseCompatibleTextRendering = true;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnThongTin.BackColor = System.Drawing.Color.White;
+            this.btnThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTin.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnThongTin.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTin.Image")));
+            this.btnThongTin.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnThongTin.Location = new System.Drawing.Point(3, 13);
+            this.btnThongTin.Name = "btnThongTin";
+            this.btnThongTin.Size = new System.Drawing.Size(87, 81);
+            this.btnThongTin.TabIndex = 1;
+            this.btnThongTin.Text = "                                                 Thông Tin Bản Thân";
+            this.btnThongTin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThongTin.UseCompatibleTextRendering = true;
+            this.btnThongTin.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // tabControl1
             // 
-            this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(96, 13);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(87, 81);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "                                                 Đổi Mật Khẩu";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseCompatibleTextRendering = true;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.White;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(3, 13);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(87, 81);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "                                                 Thông Tin Bản Thân";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseCompatibleTextRendering = true;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(189, 14);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 81);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "                                                 Hướng Dẫn";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.UseCompatibleTextRendering = true;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.button11);
-            this.groupBox4.Controls.Add(this.button12);
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox4.Location = new System.Drawing.Point(299, 18);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(189, 97);
-            this.groupBox4.TabIndex = 5;
-            this.groupBox4.TabStop = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(96, 13);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(87, 81);
-            this.button11.TabIndex = 2;
-            this.button11.Text = "                                                 Thông Tin Sách";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button11.UseCompatibleTextRendering = true;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.White;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button12.Location = new System.Drawing.Point(3, 13);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(87, 81);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "                                                 Thông Tin Thẻ Thư Viện";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button12.UseCompatibleTextRendering = true;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.button13);
-            this.groupBox5.Controls.Add(this.button14);
-            this.groupBox5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox5.Location = new System.Drawing.Point(6, 18);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(187, 97);
-            this.groupBox5.TabIndex = 4;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Quản Lý";
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.White;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button13.Location = new System.Drawing.Point(96, 13);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(87, 81);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "                                                 Phiếu Trả";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button13.UseCompatibleTextRendering = true;
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.White;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button14.Location = new System.Drawing.Point(3, 13);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(87, 81);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "                                                 Phiếu Mượn";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button14.UseCompatibleTextRendering = true;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.button10);
-            this.groupBox6.Controls.Add(this.button15);
-            this.groupBox6.Controls.Add(this.button16);
-            this.groupBox6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox6.Location = new System.Drawing.Point(213, 18);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(280, 97);
-            this.groupBox6.TabIndex = 4;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Tài Khoản";
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(189, 13);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(87, 81);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "                                                 Mượn Sách Quá Hạn";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.UseCompatibleTextRendering = true;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.White;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button15.Location = new System.Drawing.Point(96, 13);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(87, 81);
-            this.button15.TabIndex = 2;
-            this.button15.Text = "                                                 Lượt Mượn";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button15.UseCompatibleTextRendering = true;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.White;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button16.Location = new System.Drawing.Point(3, 13);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(87, 81);
-            this.button16.TabIndex = 1;
-            this.button16.Text = "                                                 Sách Chưa Mượn";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button16.UseCompatibleTextRendering = true;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.button17);
-            this.groupBox7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox7.Location = new System.Drawing.Point(3, 21);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(98, 97);
-            this.groupBox7.TabIndex = 6;
-            this.groupBox7.TabStop = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.White;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button17.Location = new System.Drawing.Point(5, 10);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(87, 81);
-            this.button17.TabIndex = 2;
-            this.button17.Text = "                                                 Thông Tin Sách";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button17.UseCompatibleTextRendering = true;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.button18);
-            this.groupBox8.Controls.Add(this.button19);
-            this.groupBox8.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox8.Location = new System.Drawing.Point(0, 21);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(189, 97);
-            this.groupBox8.TabIndex = 6;
-            this.groupBox8.TabStop = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.White;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button18.Location = new System.Drawing.Point(96, 13);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(87, 81);
-            this.button18.TabIndex = 2;
-            this.button18.Text = "                                                 Reports Thành Viên";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button18.UseCompatibleTextRendering = true;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.White;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button19.Location = new System.Drawing.Point(3, 13);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(87, 81);
-            this.button19.TabIndex = 1;
-            this.button19.Text = "                                                 Reports Trả Sách";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button19.UseCompatibleTextRendering = true;
-            this.button19.UseVisualStyleBackColor = false;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(598, 149);
+            this.tabControl1.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -608,24 +606,25 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "Quản Lý Thư Viện";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabPage5.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -648,25 +647,25 @@
         private System.Windows.Forms.Button BtnDangXuat;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnThongTinNV;
+        private System.Windows.Forms.Button btnDoiMK1;
+        private System.Windows.Forms.Button btnThongTinBanThan;
         private System.Windows.Forms.Button btnDSNV;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button btnRThanhVien;
+        private System.Windows.Forms.Button btnRTraSach;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnTimSach;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnMSQH;
+        private System.Windows.Forms.Button btnLuotMuon;
+        private System.Windows.Forms.Button btnSCM;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnPhieuTra;
+        private System.Windows.Forms.Button btnPhieuMuon;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnTTS;
+        private System.Windows.Forms.Button btnTTTTV;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;

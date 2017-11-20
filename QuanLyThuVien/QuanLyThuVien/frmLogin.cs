@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BusinessObject;
+using BusinessLogic;
 namespace QuanLyThuVien
 {
     public partial class frmLogin : Form

@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BusinessObject;
+using BusinessLogic;
 namespace QuanLyThuVien
 {
     public partial class frmMain : Form
@@ -60,7 +61,23 @@ namespace QuanLyThuVien
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            
+            btnDoiMK.Enabled = false;
+            btnThongTin.Enabled = false;
+            btnThongTinBanThan.Enabled = false;
+            btnDSNV.Enabled = false;
+            BtnDangXuat.Enabled = false;
+            btnDoiMK1.Enabled = false;
+            btnThongTinNV.Enabled = false;
+            btnTTTTV.Enabled = false;
+            btnTTS.Enabled = false;
+            btnPhieuMuon.Enabled = false;
+            btnPhieuTra.Enabled = false;
+            btnRThanhVien.Enabled = false;
+            btnRTraSach.Enabled = false;
+            btnSCM.Enabled = false;
+            btnLuotMuon.Enabled = false;
+            btnMSQH.Enabled = false;
+
         }
     }
 }
