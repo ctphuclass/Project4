@@ -470,6 +470,7 @@
             this.BtnDangXuat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnDangXuat.UseCompatibleTextRendering = true;
             this.BtnDangXuat.UseVisualStyleBackColor = false;
+            this.BtnDangXuat.Click += new System.EventHandler(this.BtnDangXuat_Click);
             // 
             // btnLogin
             // 
@@ -639,18 +640,9 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button btnDoiMK;
-        private System.Windows.Forms.Button btnThongTin;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button BtnDangXuat;
-        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnThongTinNV;
-        private System.Windows.Forms.Button btnDoiMK1;
-        private System.Windows.Forms.Button btnThongTinBanThan;
-        private System.Windows.Forms.Button btnDSNV;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button btnRThanhVien;
         private System.Windows.Forms.Button btnRTraSach;
@@ -666,10 +658,19 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btnTTS;
         private System.Windows.Forms.Button btnTTTTV;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer2;
+        public System.Windows.Forms.Button btnDoiMK;
+        public System.Windows.Forms.Button btnThongTin;
+        public System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.Button btnThongTinNV;
+        public System.Windows.Forms.Button btnDoiMK1;
+        public System.Windows.Forms.Button btnThongTinBanThan;
+        public System.Windows.Forms.Button btnDSNV;
+        public System.Windows.Forms.Button BtnDangXuat;
+        public System.Windows.Forms.Button btnLogin;
+        public System.Windows.Forms.Button button9;
     }
 }

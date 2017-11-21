@@ -11,8 +11,14 @@ using BusinessObject;
 using BusinessLogic;
 namespace QuanLyThuVien
 {
+
     public partial class frmMain : Form
     {
+        public int UserID;
+        private List<UserPermissionBO> listPermission;
+        UserBL userBL;
+        frmLogin fLogin;
+        UserPermissionBO result;
         private clsImage gifImage = null;
         private string filePath = @"C:\Users\HP\Source\Repos\Project4\QuanLyThuVien\QuanLyThuVien\Resources\bgLogo.gif";
         public frmMain()
@@ -22,12 +28,25 @@ namespace QuanLyThuVien
             gifImage.ReverseAtEnd = false;
             timer1.Enabled = true;
             timer2.Enabled = true;
+            userBL = new UserBL();
+            fLogin = new frmLogin();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmLogin login = new frmLogin();
-            login.ShowDialog();
+            frmMain fMain = new frmMain();
+            fLogin.ShowDialog();
+            if (fLogin.UserID > 0)
+            {
+                listPermission = userBL.GetPermission(fLogin.UserID, "MAIN");
+                CheckPermission();
+                BtnDangXuat.Enabled = true;
+                btnLogin.Enabled = false;
+                btnDoiMK.Enabled = true;
+                btnThongTin.Enabled = true;
+                btnDoiMK1.Enabled = true;
+                btnThongTinBanThan.Enabled = true;
+            }
         }
         Random ramdom = new Random();
         int x = 0, y = 24, a = 1;
@@ -54,6 +73,30 @@ namespace QuanLyThuVien
             }
         }
 
+        private void BtnDangXuat_Click(object sender, EventArgs e)
+        {
+            fLogin.tbTenDangNhap.Text = "";
+            fLogin.tbMK.Text = "";
+            btnThongTin.Enabled = false;
+            btnThongTinBanThan.Enabled = false;
+            btnDSNV.Enabled = false;
+            BtnDangXuat.Enabled = false;
+            btnDoiMK1.Enabled = false;
+            btnDoiMK.Enabled = false;
+            btnThongTinNV.Enabled = false;
+            btnTTTTV.Enabled = false;
+            btnTTS.Enabled = false;
+            btnPhieuMuon.Enabled = false;
+            btnPhieuTra.Enabled = false;
+            btnRThanhVien.Enabled = false;
+            btnRTraSach.Enabled = false;
+            btnSCM.Enabled = false;
+            btnLuotMuon.Enabled = false;
+            btnMSQH.Enabled = false;
+            btnLogin.Enabled = true;
+            fLogin.UserID = 0;
+        }
+
         private void timer2_Tick(object sender, EventArgs e)
         {
             pictureBox1.Image = gifImage.GetNextFrame();
@@ -77,7 +120,69 @@ namespace QuanLyThuVien
             btnSCM.Enabled = false;
             btnLuotMuon.Enabled = false;
             btnMSQH.Enabled = false;
+        }
+        public void CheckPermission()
+        {
 
+            result = listPermission.Find(item => item.Permission == "ADMIN");
+            if (result != null)
+            {
+                btnDSNV.Enabled = false;
+                btnThongTinNV.Enabled = true;
+                btnTTTTV.Enabled = true;
+                btnTTS.Enabled = true;
+                btnPhieuMuon.Enabled = true;
+                btnPhieuTra.Enabled = true;
+                btnRThanhVien.Enabled = true;
+                btnRTraSach.Enabled = true;
+                btnSCM.Enabled = true;
+                btnLuotMuon.Enabled = true;
+                btnMSQH.Enabled = true;
+            }
+            else
+            {
+                btnDSNV.Enabled = false;
+                btnThongTinNV.Enabled = false;
+                btnTTTTV.Enabled = false;
+                btnTTS.Enabled = false;
+                btnPhieuMuon.Enabled = false;
+                btnPhieuTra.Enabled = false;
+                btnRThanhVien.Enabled = false;
+                btnRTraSach.Enabled = false;
+                btnSCM.Enabled = false;
+                btnLuotMuon.Enabled = false;
+                btnMSQH.Enabled = false;
+
+                result = listPermission.Find(item => item.Permission == "TV");
+                if (result != null)
+                {
+                    btnDSNV.Enabled = false;
+                    btnThongTinNV.Enabled = false;
+                    btnTTTTV.Enabled = true;
+                    btnTTS.Enabled = true;
+                    btnPhieuMuon.Enabled = true;
+                    btnPhieuTra.Enabled = true;
+                    btnRThanhVien.Enabled = false;
+                    btnRTraSach.Enabled = false;
+                    btnSCM.Enabled = false;
+                    btnLuotMuon.Enabled = false;
+                    btnMSQH.Enabled = false;
+                }
+                else
+                {
+                    btnDSNV.Enabled = false;
+                    btnThongTinNV.Enabled = false;
+                    btnTTTTV.Enabled = false;
+                    btnTTS.Enabled = false;
+                    btnPhieuMuon.Enabled = false;
+                    btnPhieuTra.Enabled = false;
+                    btnRThanhVien.Enabled = false;
+                    btnRTraSach.Enabled = false;
+                    btnSCM.Enabled = false;
+                    btnLuotMuon.Enabled = false;
+                    btnMSQH.Enabled = false;
+                }
+            }
         }
     }
 }

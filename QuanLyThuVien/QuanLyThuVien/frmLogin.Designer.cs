@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbTenDangNhap = new System.Windows.Forms.TextBox();
+            this.tbMK = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,19 +80,19 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật khẩu";
             // 
-            // textBox1
+            // tbTenDangNhap
             // 
-            this.textBox1.Location = new System.Drawing.Point(253, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 3;
+            this.tbTenDangNhap.Location = new System.Drawing.Point(253, 67);
+            this.tbTenDangNhap.Name = "tbTenDangNhap";
+            this.tbTenDangNhap.Size = new System.Drawing.Size(156, 20);
+            this.tbTenDangNhap.TabIndex = 3;
             // 
-            // textBox2
+            // tbMK
             // 
-            this.textBox2.Location = new System.Drawing.Point(253, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
-            this.textBox2.TabIndex = 4;
+            this.tbMK.Location = new System.Drawing.Point(253, 97);
+            this.tbMK.Name = "tbMK";
+            this.tbMK.Size = new System.Drawing.Size(156, 20);
+            this.tbMK.TabIndex = 4;
             // 
             // btnDangNhap
             // 
@@ -105,6 +105,7 @@
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnDong
             // 
@@ -116,6 +117,7 @@
             this.btnDong.TabIndex = 5;
             this.btnDong.Text = "       Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // frmLogin
             // 
@@ -124,8 +126,8 @@
             this.ClientSize = new System.Drawing.Size(424, 171);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnDangNhap);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbMK);
+            this.Controls.Add(this.tbTenDangNhap);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -144,9 +146,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnDong;
+        public System.Windows.Forms.TextBox tbTenDangNhap;
+        public System.Windows.Forms.TextBox tbMK;
     }
 }
