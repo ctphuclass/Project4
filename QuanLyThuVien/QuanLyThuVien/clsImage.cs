@@ -16,6 +16,16 @@ namespace QuanLyThuVien
         private bool reverse;
         private int step = 1;
 
+        public clsImage(Bitmap pBitmap)
+        {
+            gifImage = pBitmap;
+            //initialize
+            dimension = new FrameDimension(gifImage.FrameDimensionsList[0]);
+            //gets the GUID
+            //total frames in the animation
+            frameCount = gifImage.GetFrameCount(dimension);
+        }
+
         public clsImage(string path)
         {
             gifImage = Image.FromFile(path);
