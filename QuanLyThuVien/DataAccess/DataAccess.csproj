@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Provider.cs" />
+    <Compile Include="Seach_DA.cs" />
     <Compile Include="UserDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
