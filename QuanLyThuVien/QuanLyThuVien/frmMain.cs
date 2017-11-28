@@ -20,11 +20,11 @@ namespace QuanLyThuVien
         frmLogin fLogin;
         UserPermissionBO result;
         private clsImage gifImage = null;
-        private string filePath = @"C:\Users\HP\Source\Repos\Project4\QuanLyThuVien\QuanLyThuVien\Resources\bgLogo.gif";
+        //private string filePath = @"C:\Users\HP\Source\Repos\Project4\QuanLyThuVien\QuanLyThuVien\Resources\bgLogo.gif";
         public frmMain()
         {
             InitializeComponent();
-            gifImage = new clsImage(filePath);
+            gifImage = new clsImage(Properties.Resources.bgLogo);
             gifImage.ReverseAtEnd = false;
             timer1.Enabled = true;
             timer2.Enabled = true;
