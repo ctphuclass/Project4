@@ -8,16 +8,17 @@ namespace BusinessObject
 {
     public class SeachBO
     {
-        private int maSach;
-        private string tenSach;
-        private int gia;
+        private string maSach;
+        private string tenSach;     
         private string tenNXB;
         private string tenTG;
-        private int soLuong;
-        private DateTime ngayNhap;
         private string theLoai;
+        private DateTime ngayNhap;
+        private int gia;
+        private int soLuong;       
+       
 
-        public int MaSach
+        public string MaSach
         {
             get
             {
@@ -40,19 +41,6 @@ namespace BusinessObject
             set
             {
                 tenSach = value;
-            }
-        }
-
-        public int Gia
-        {
-            get
-            {
-                return gia;
-            }
-
-            set
-            {
-                gia = value;
             }
         }
 
@@ -82,16 +70,16 @@ namespace BusinessObject
             }
         }
 
-        public int SoLuong
+        public string TheLoai
         {
             get
             {
-                return soLuong;
+                return theLoai;
             }
 
             set
             {
-                soLuong = value;
+                theLoai = value;
             }
         }
 
@@ -108,16 +96,29 @@ namespace BusinessObject
             }
         }
 
-        public string TheLoai
+        public int Gia
         {
             get
             {
-                return theLoai;
+                return gia;
             }
 
             set
             {
-                theLoai = value;
+                gia = value;
+            }
+        }
+
+        public int SoLuong
+        {
+            get
+            {
+                return soLuong;
+            }
+
+            set
+            {
+                soLuong = value;
             }
         }
     }

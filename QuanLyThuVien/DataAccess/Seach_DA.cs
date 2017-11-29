@@ -6,50 +6,48 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using BusinessObject;
+using System.Configuration;
 
 namespace DataAccess
 {
-    class Seach_DA
+    public class Seach_DA
     {
-        public static SqlConnection conn;
-
-        public List<SeachBO> Seach()
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["VIDO"].ToString());
+        List<SeachBO> ListTimKiem = new List<SeachBO>();       
+        DataTable dt = new DataTable();
+        public List<SeachBO> Seach(SeachBO SBO)
         {
-            List<SeachBO> ListTimKiem = new List<SeachBO>();
             SeachBO TK;
             try
             {
-
-                SqlCommand cmd = new SqlCommand("usp_DanhSach_TimKiem", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                conn = Provider.ConnectProveder();
-                var Reader = cmd.ExecuteReader();
-                while (Reader.Read())
+                string query = string.Format("exec [store_timkiem] @TenSach = N'%{0}%'", SBO.TenSach);
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                for (int i=0;i<dt.Rows.Count;i++)
                 {
                     TK = new SeachBO();
-                    TK.MaSach = Int32.Parse(Reader["MaSach"].ToString());
-                    TK.TenSach = Reader["TenSach"].ToString();
-                    TK.Gia = Int32.Parse(Reader["Gia"].ToString());
-                    TK.TenNXB = Reader["TenNXB"].ToString();
-                    TK.TenTG = Reader["TenTG"].ToString();
-                    TK.SoLuong = Int32.Parse(Reader["SoLuong"].ToString());
-                    TK.NgayNhap = DateTime.Parse(Reader["NgayNhap"].ToString());
-                    TK.TheLoai = Reader["TheLoai"].ToString();
+                    TK.MaSach = dt.Rows[i]["MaSach"].ToString();
+                    TK.TenSach = dt.Rows[i]["TenSach"].ToString();
+                    TK.TenTG = dt.Rows[i]["HoTenTG"].ToString();
+                    TK.TenNXB = dt.Rows[i]["TenNXB"].ToString();
+                    TK.TheLoai = dt.Rows[i]["TenTL"].ToString();
+                    TK.NgayNhap = DateTime.Parse(dt.Rows[i]["NgayNhap"].ToString());
+                    TK.Gia = Int32.Parse(dt.Rows[i]["Gia"].ToString());
+                    TK.SoLuong = Int32.Parse(dt.Rows[i]["SoLuong"].ToString());
                     ListTimKiem.Add(TK);
-                }
-                Reader.Close();
-                cmd.Dispose();
+                }               
             }
             catch
             {
-                ListTimKiem = null;
+               
             }
             finally
             {
-                Provider.EndConnect(conn);
+                conn.Close();
             }
             return ListTimKiem;
-        }
-
+        }          
     }
 }

@@ -75,7 +75,7 @@ using System.Data;
             reader.Close();
             cmd.Dispose();
         }
-        catch(Exception ex)
+        catch
         {
             list = null;
         }

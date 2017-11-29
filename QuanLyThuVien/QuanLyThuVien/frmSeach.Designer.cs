@@ -31,10 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btthoat = new System.Windows.Forms.Button();
             this.bttiemkiem = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbtimkiem = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.LuoiDuLieu_Seach = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -46,20 +43,17 @@
             // 
             this.groupBox1.Controls.Add(this.btthoat);
             this.groupBox1.Controls.Add(this.bttiemkiem);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.tbtimkiem);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(735, 134);
+            this.groupBox1.Size = new System.Drawing.Size(935, 103);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Sách";
             // 
             // btthoat
             // 
-            this.btthoat.Location = new System.Drawing.Point(599, 83);
+            this.btthoat.Location = new System.Drawing.Point(792, 31);
             this.btthoat.Name = "btthoat";
             this.btthoat.Size = new System.Drawing.Size(104, 37);
             this.btthoat.TabIndex = 5;
@@ -69,7 +63,7 @@
             // 
             // bttiemkiem
             // 
-            this.bttiemkiem.Location = new System.Drawing.Point(599, 26);
+            this.bttiemkiem.Location = new System.Drawing.Point(636, 33);
             this.bttiemkiem.Name = "bttiemkiem";
             this.bttiemkiem.Size = new System.Drawing.Size(104, 37);
             this.bttiemkiem.TabIndex = 4;
@@ -77,46 +71,20 @@
             this.bttiemkiem.UseVisualStyleBackColor = true;
             this.bttiemkiem.Click += new System.EventHandler(this.bttiemkiem_Click);
             // 
-            // textBox2
+            // tbtimkiem
             // 
-            this.textBox2.Location = new System.Drawing.Point(117, 83);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(437, 32);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(117, 33);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(437, 32);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên Sách";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã Sách";
+            this.tbtimkiem.Location = new System.Drawing.Point(19, 38);
+            this.tbtimkiem.Multiline = true;
+            this.tbtimkiem.Name = "tbtimkiem";
+            this.tbtimkiem.Size = new System.Drawing.Size(580, 32);
+            this.tbtimkiem.TabIndex = 2;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.LuoiDuLieu_Seach);
-            this.groupBox2.Location = new System.Drawing.Point(13, 196);
+            this.groupBox2.Location = new System.Drawing.Point(13, 135);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(735, 443);
+            this.groupBox2.Size = new System.Drawing.Size(935, 291);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Sách Tìm Kiếm";
@@ -128,18 +96,19 @@
             this.LuoiDuLieu_Seach.Location = new System.Drawing.Point(3, 18);
             this.LuoiDuLieu_Seach.Name = "LuoiDuLieu_Seach";
             this.LuoiDuLieu_Seach.RowTemplate.Height = 24;
-            this.LuoiDuLieu_Seach.Size = new System.Drawing.Size(729, 422);
+            this.LuoiDuLieu_Seach.Size = new System.Drawing.Size(929, 270);
             this.LuoiDuLieu_Seach.TabIndex = 0;
             // 
             // frmSeach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 651);
+            this.ClientSize = new System.Drawing.Size(984, 431);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmSeach";
             this.Text = "frmSeach";
+            this.Load += new System.EventHandler(this.frmSeach_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -152,12 +121,9 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btthoat;
         private System.Windows.Forms.Button bttiemkiem;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbtimkiem;
         private System.Windows.Forms.DataGridView LuoiDuLieu_Seach;
     }
 }
