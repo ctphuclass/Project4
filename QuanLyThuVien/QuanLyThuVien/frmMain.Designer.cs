@@ -558,6 +558,7 @@
             this.btnDSNV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDSNV.UseCompatibleTextRendering = true;
             this.btnDSNV.UseVisualStyleBackColor = false;
+            this.btnDSNV.Click += new System.EventHandler(this.btnDSNV_Click);
             // 
             // btnDoiMK
             // 

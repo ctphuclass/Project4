@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NhanVien_BO.cs" />
     <Compile Include="ResultMessageBO.cs" />
     <Compile Include="SeachBO.cs" />
     <Compile Include="UserBO.cs" />

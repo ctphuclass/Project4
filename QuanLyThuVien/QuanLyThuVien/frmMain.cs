@@ -20,6 +20,7 @@ namespace QuanLyThuVien
         frmLogin fLogin;
         UserPermissionBO result;
         frmSeach TimKiem = new frmSeach();
+        frmListPersonel NhanVien = new frmListPersonel();
         private clsImage gifImage = null;
         //private string filePath = @"C:\Users\HP\Source\Repos\Project4\QuanLyThuVien\QuanLyThuVien\Resources\bgLogo.gif";
         public frmMain()
@@ -106,6 +107,11 @@ namespace QuanLyThuVien
         private void btnTimSach_Click(object sender, EventArgs e)
         {
             TimKiem.ShowDialog();
+        }
+
+        private void btnDSNV_Click(object sender, EventArgs e)
+        {
+            NhanVien.ShowDialog();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
