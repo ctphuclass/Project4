@@ -23,6 +23,7 @@ namespace DataAccess
                 string query = string.Format("exec [store_timkiem] @TenSach = N'%{0}%'", SBO.TenSach);
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
+
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 for (int i=0;i<dt.Rows.Count;i++)

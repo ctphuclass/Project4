@@ -8,8 +8,12 @@ using DataAccess;
 
 namespace BusinessLogic
 {
-    class NhanVien_BL
+    public class NhanVien_BL
     {
-
+        public static List<NhanVien_BO> DanhSachNhanVien()
+        {
+            NhanVien_DA NVDA = new NhanVien_DA();
+            return NVDA.HamNV();
+        }
     }
 }
