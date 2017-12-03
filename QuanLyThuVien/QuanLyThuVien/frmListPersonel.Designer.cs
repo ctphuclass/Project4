@@ -266,7 +266,7 @@
             this.btThoat.TabIndex = 8;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = false;
-            this.btThoat.Click += new System.EventHandler(this.button3_Click);
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btXoa
             // 
@@ -280,6 +280,7 @@
             this.btXoa.TabIndex = 7;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = false;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btSua
             // 
@@ -293,6 +294,7 @@
             this.btSua.TabIndex = 6;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = false;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
@@ -306,6 +308,7 @@
             this.btThem.TabIndex = 5;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = false;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // groupBox4
             // 
@@ -329,6 +332,7 @@
             this.bttimkiemnhanvien.TabIndex = 10;
             this.bttimkiemnhanvien.Text = "Tìm Kiếm";
             this.bttimkiemnhanvien.UseVisualStyleBackColor = false;
+            this.bttimkiemnhanvien.Click += new System.EventHandler(this.bttimkiemnhanvien_Click);
             // 
             // tbtknv
             // 

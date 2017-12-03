@@ -19,10 +19,17 @@ namespace QuanLyThuVien
             InitializeComponent();
         }
 
-        private void frmListPersonel_Load(object sender, EventArgs e)
+        void LoadNV()
         {
             List<NhanVien_BO> DSTCNV = NhanVien_BL.DanhSachNhanVien();
             LuoiDuLieuNhanVien.DataSource = DSTCNV;
+        }
+
+        //Load Dữ Liệu Và Thiết Kế Soure
+        #region
+        private void frmListPersonel_Load(object sender, EventArgs e)
+        {
+            LoadNV();
             LuoiDuLieuNhanVien.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
             LuoiDuLieuNhanVien.Columns["MaNV"].Width = 100;
             LuoiDuLieuNhanVien.Columns["HoTenNV"].HeaderText = "Họ Tên";
@@ -37,12 +44,10 @@ namespace QuanLyThuVien
             LuoiDuLieuNhanVien.Columns["NgayVaoLam"].HeaderText = "Ngày Vào Làm";
             LuoiDuLieuNhanVien.Columns["NgayVaoLam"].Width = 100;
         }
+        #endregion
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        //Đưa Dữ Liệu Từ Soure Vào TextBox
+        #region
         private void LuoiDuLieuNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow dgrv = LuoiDuLieuNhanVien.CurrentRow;
@@ -62,6 +67,95 @@ namespace QuanLyThuVien
             tbEmail.Text = dgrv.Cells["Email"].Value.ToString();
             DTPNgaySinh.Text = dgrv.Cells["NgaySinh"].Value.ToString();
             DTPNgayVaoLam.Text = dgrv.Cells["NgayVaoLam"].Value.ToString();
+        }
+        #endregion
+
+
+        private void bttimkiemnhanvien_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        //Button Thêm
+        #region
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            NhanVien_BO NhanVien = new NhanVien_BO();
+            NhanVien.MaNV = tbMaNhanVien.Text;
+            NhanVien.HoTenNV = tbHoTenNhanVien.Text;
+            if(tbGioiTinh.Text == "Nam")
+            {
+                NhanVien.GioiTinh = true;
+            }
+            else
+            {
+                NhanVien.GioiTinh = false;
+            }
+            NhanVien.NgaySinh = DateTime.Parse(DTPNgaySinh.Text);
+            NhanVien.SoDienThoai = tbSoDienThoai.Text;
+            NhanVien.DiaChi = tbDiaChi.Text;
+            NhanVien.Email = tbEmail.Text;
+            NhanVien.NgayVaoLam = DateTime.Parse(DTPNgayVaoLam.Text);
+            if (NhanVien_BL.Them(NhanVien) == true)
+            {
+                MessageBox.Show("Them thanh cong");
+            }
+            else
+                MessageBox.Show("them that bai");
+            LoadNV();
+        }
+        #endregion
+
+        //Button Sửa
+        #region
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            NhanVien_BO NhanVien = new NhanVien_BO();
+            NhanVien.HoTenNV = tbHoTenNhanVien.Text;
+            if (tbGioiTinh.Text == "Nam")
+            {
+                NhanVien.GioiTinh = true;
+            }
+            else
+            {
+                NhanVien.GioiTinh = false;
+            }
+            NhanVien.NgaySinh = DateTime.Parse(DTPNgaySinh.Text);
+            NhanVien.SoDienThoai = tbSoDienThoai.Text;
+            NhanVien.DiaChi = tbDiaChi.Text;
+            NhanVien.Email = tbEmail.Text;
+            NhanVien.NgayVaoLam = DateTime.Parse(DTPNgayVaoLam.Text);
+            NhanVien.MaNV = tbMaNhanVien.Text;
+            if(NhanVien_BL.Sua(NhanVien) == true)
+            {
+                MessageBox.Show("Sửa Thành Công!", "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Sửa Thất bại!", "Cảnh báo");
+            }
+            LoadNV();
+        }
+        #endregion
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            NhanVien_BO NhanVien = new NhanVien_BO();
+            NhanVien.MaNV = tbMaNhanVien.Text;
+            if (NhanVien_BL.Sua(NhanVien) == true)
+            {
+                MessageBox.Show("Xóa Thành Công!", "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Xóa Thất bại!", "Cảnh báo");
+            }
+            LoadNV();
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
