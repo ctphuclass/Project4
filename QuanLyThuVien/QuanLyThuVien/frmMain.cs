@@ -22,7 +22,6 @@ namespace QuanLyThuVien
         frmSeach TimKiem = new frmSeach();
         frmListPersonel NhanVien = new frmListPersonel();
         private clsImage gifImage = null;
-        //private string filePath = @"C:\Users\HP\Source\Repos\Project4\QuanLyThuVien\QuanLyThuVien\Resources\bgLogo.gif";
         public frmMain()
         {
             InitializeComponent();
@@ -139,7 +138,7 @@ namespace QuanLyThuVien
             result = listPermission.Find(item => item.Permission == "ADMIN");
             if (result != null)
             {
-                btnDSNV.Enabled = false;
+                btnDSNV.Enabled = true;
                 btnThongTinNV.Enabled = true;
                 btnTTTTV.Enabled = true;
                 btnTTS.Enabled = true;

@@ -91,6 +91,7 @@
             // 
             this.tbMK.Location = new System.Drawing.Point(253, 97);
             this.tbMK.Name = "tbMK";
+            this.tbMK.PasswordChar = '*';
             this.tbMK.Size = new System.Drawing.Size(156, 20);
             this.tbMK.TabIndex = 4;
             // 
@@ -121,6 +122,7 @@
             // 
             // frmLogin
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 171);

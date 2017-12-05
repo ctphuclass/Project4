@@ -33,7 +33,7 @@ namespace DataAccess
                     NhanVien = new NhanVien_BO();
                     NhanVien.MaNV = dt.Rows[i]["MaNV"].ToString();
                     NhanVien.HoTenNV = dt.Rows[i]["HoTen"].ToString();
-                    NhanVien.GioiTinh = bool.Parse(dt.Rows[i]["GioiTinh"].ToString());
+                    NhanVien.GioiTinh = dt.Rows[i]["GioiTinh"].ToString();
                     NhanVien.NgaySinh = DateTime.Parse(dt.Rows[i]["NgaySinh"].ToString());
                     NhanVien.SoDienThoai = dt.Rows[i]["DienThoai"].ToString();
                     NhanVien.DiaChi = dt.Rows[i]["DiaChi"].ToString();

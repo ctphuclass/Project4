@@ -10,7 +10,7 @@ namespace BusinessObject
     {
         private string maNV;
         private string hoTenNV;
-        private bool gioiTinh;
+        private string gioiTinh;
         private DateTime ngaySinh;
         private string soDienThoai;
         private string diaChi;
@@ -43,7 +43,7 @@ namespace BusinessObject
             }
         }
 
-        public bool GioiTinh
+        public string GioiTinh
         {
             get
             {

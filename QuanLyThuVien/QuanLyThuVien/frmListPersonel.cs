@@ -83,14 +83,7 @@ namespace QuanLyThuVien
             NhanVien_BO NhanVien = new NhanVien_BO();
             NhanVien.MaNV = tbMaNhanVien.Text;
             NhanVien.HoTenNV = tbHoTenNhanVien.Text;
-            if(tbGioiTinh.Text == "Nam")
-            {
-                NhanVien.GioiTinh = true;
-            }
-            else
-            {
-                NhanVien.GioiTinh = false;
-            }
+            NhanVien.GioiTinh = tbGioiTinh.Text;
             NhanVien.NgaySinh = DateTime.Parse(DTPNgaySinh.Text);
             NhanVien.SoDienThoai = tbSoDienThoai.Text;
             NhanVien.DiaChi = tbDiaChi.Text;
@@ -112,14 +105,7 @@ namespace QuanLyThuVien
         {
             NhanVien_BO NhanVien = new NhanVien_BO();
             NhanVien.HoTenNV = tbHoTenNhanVien.Text;
-            if (tbGioiTinh.Text == "Nam")
-            {
-                NhanVien.GioiTinh = true;
-            }
-            else
-            {
-                NhanVien.GioiTinh = false;
-            }
+            NhanVien.GioiTinh = tbGioiTinh.Text;
             NhanVien.NgaySinh = DateTime.Parse(DTPNgaySinh.Text);
             NhanVien.SoDienThoai = tbSoDienThoai.Text;
             NhanVien.DiaChi = tbDiaChi.Text;
