@@ -107,7 +107,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 22;
-            this.button2.Text = "Edit";
+            this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -116,7 +116,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 23;
-            this.button1.Text = "OK";
+            this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1

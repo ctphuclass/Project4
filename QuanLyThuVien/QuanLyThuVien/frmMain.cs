@@ -45,8 +45,6 @@ namespace QuanLyThuVien
                 btnLogin.Enabled = false;
                 btnDoiMK.Enabled = true;
                 btnThongTin.Enabled = true;
-                btnDoiMK1.Enabled = true;
-                btnThongTinBanThan.Enabled = true;
             }
         }
         Random ramdom = new Random();
@@ -79,12 +77,9 @@ namespace QuanLyThuVien
             fLogin.tbTenDangNhap.Text = "";
             fLogin.tbMK.Text = "";
             btnThongTin.Enabled = false;
-            btnThongTinBanThan.Enabled = false;
             btnDSNV.Enabled = false;
             BtnDangXuat.Enabled = false;
-            btnDoiMK1.Enabled = false;
             btnDoiMK.Enabled = false;
-            btnThongTinNV.Enabled = false;
             btnTTTTV.Enabled = false;
             btnTTS.Enabled = false;
             btnPhieuMuon.Enabled = false;
@@ -130,11 +125,8 @@ namespace QuanLyThuVien
         {
             btnDoiMK.Enabled = false;
             btnThongTin.Enabled = false;
-            btnThongTinBanThan.Enabled = false;
             btnDSNV.Enabled = false;
             BtnDangXuat.Enabled = false;
-            btnDoiMK1.Enabled = false;
-            btnThongTinNV.Enabled = false;
             btnTTTTV.Enabled = false;
             btnTTS.Enabled = false;
             btnPhieuMuon.Enabled = false;
@@ -152,7 +144,6 @@ namespace QuanLyThuVien
             if (result != null)
             {
                 btnDSNV.Enabled = true;
-                btnThongTinNV.Enabled = true;
                 btnTTTTV.Enabled = true;
                 btnTTS.Enabled = true;
                 btnPhieuMuon.Enabled = true;
@@ -163,49 +154,19 @@ namespace QuanLyThuVien
                 btnLuotMuon.Enabled = true;
                 btnMSQH.Enabled = true;
             }
-            else
+            result = listPermission.Find(item => item.Permission == "TV");
+            if (result != null)
             {
                 btnDSNV.Enabled = false;
-                btnThongTinNV.Enabled = false;
                 btnTTTTV.Enabled = false;
                 btnTTS.Enabled = false;
-                btnPhieuMuon.Enabled = false;
-                btnPhieuTra.Enabled = false;
+                btnPhieuMuon.Enabled = true;
+                btnPhieuTra.Enabled = true;
                 btnRThanhVien.Enabled = false;
                 btnRTraSach.Enabled = false;
                 btnSCM.Enabled = false;
                 btnLuotMuon.Enabled = false;
                 btnMSQH.Enabled = false;
-
-                result = listPermission.Find(item => item.Permission == "TV");
-                if (result != null)
-                {
-                    btnDSNV.Enabled = false;
-                    btnThongTinNV.Enabled = false;
-                    btnTTTTV.Enabled = true;
-                    btnTTS.Enabled = true;
-                    btnPhieuMuon.Enabled = true;
-                    btnPhieuTra.Enabled = true;
-                    btnRThanhVien.Enabled = false;
-                    btnRTraSach.Enabled = false;
-                    btnSCM.Enabled = false;
-                    btnLuotMuon.Enabled = false;
-                    btnMSQH.Enabled = false;
-                }
-                else
-                {
-                    btnDSNV.Enabled = false;
-                    btnThongTinNV.Enabled = false;
-                    btnTTTTV.Enabled = false;
-                    btnTTS.Enabled = false;
-                    btnPhieuMuon.Enabled = false;
-                    btnPhieuTra.Enabled = false;
-                    btnRThanhVien.Enabled = false;
-                    btnRTraSach.Enabled = false;
-                    btnSCM.Enabled = false;
-                    btnLuotMuon.Enabled = false;
-                    btnMSQH.Enabled = false;
-                }
             }
         }
     }

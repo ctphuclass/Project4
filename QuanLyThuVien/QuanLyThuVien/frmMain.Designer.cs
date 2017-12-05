@@ -50,10 +50,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnTTS = new System.Windows.Forms.Button();
             this.btnTTTTV = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnThongTinNV = new System.Windows.Forms.Button();
-            this.btnDoiMK1 = new System.Windows.Forms.Button();
-            this.btnThongTinBanThan = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
@@ -77,7 +73,6 @@
             this.groupBox5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -190,7 +185,7 @@
             this.tabPage3.Controls.Add(this.groupBox5);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(590, 121);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mượn Trả";
@@ -302,11 +297,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(590, 121);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản Lý";
@@ -317,7 +311,7 @@
             this.groupBox4.Controls.Add(this.btnTTS);
             this.groupBox4.Controls.Add(this.btnTTTTV);
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox4.Location = new System.Drawing.Point(299, 18);
+            this.groupBox4.Location = new System.Drawing.Point(6, 18);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(189, 97);
             this.groupBox4.TabIndex = 5;
@@ -334,7 +328,7 @@
             this.btnTTS.Name = "btnTTS";
             this.btnTTS.Size = new System.Drawing.Size(87, 81);
             this.btnTTS.TabIndex = 2;
-            this.btnTTS.Text = "                                                 Thông Tin Sách";
+            this.btnTTS.Text = "                                                 Quản Lý Sách";
             this.btnTTS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTTS.UseCompatibleTextRendering = true;
             this.btnTTS.UseVisualStyleBackColor = false;
@@ -350,70 +344,10 @@
             this.btnTTTTV.Name = "btnTTTTV";
             this.btnTTTTV.Size = new System.Drawing.Size(87, 81);
             this.btnTTTTV.TabIndex = 1;
-            this.btnTTTTV.Text = "                                                 Thông Tin Thẻ Thư Viện";
+            this.btnTTTTV.Text = "                                                 Quản Lý Thẻ Thư Viện";
             this.btnTTTTV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTTTTV.UseCompatibleTextRendering = true;
             this.btnTTTTV.UseVisualStyleBackColor = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnThongTinNV);
-            this.groupBox2.Controls.Add(this.btnDoiMK1);
-            this.groupBox2.Controls.Add(this.btnThongTinBanThan);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox2.Location = new System.Drawing.Point(3, 18);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 97);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            // 
-            // btnThongTinNV
-            // 
-            this.btnThongTinNV.BackColor = System.Drawing.Color.White;
-            this.btnThongTinNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTinNV.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnThongTinNV.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTinNV.Image")));
-            this.btnThongTinNV.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnThongTinNV.Location = new System.Drawing.Point(189, 13);
-            this.btnThongTinNV.Name = "btnThongTinNV";
-            this.btnThongTinNV.Size = new System.Drawing.Size(87, 81);
-            this.btnThongTinNV.TabIndex = 3;
-            this.btnThongTinNV.Text = "                                                 Thông Tin Nhân Viên";
-            this.btnThongTinNV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnThongTinNV.UseCompatibleTextRendering = true;
-            this.btnThongTinNV.UseVisualStyleBackColor = false;
-            // 
-            // btnDoiMK1
-            // 
-            this.btnDoiMK1.BackColor = System.Drawing.Color.White;
-            this.btnDoiMK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiMK1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnDoiMK1.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiMK1.Image")));
-            this.btnDoiMK1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDoiMK1.Location = new System.Drawing.Point(96, 13);
-            this.btnDoiMK1.Name = "btnDoiMK1";
-            this.btnDoiMK1.Size = new System.Drawing.Size(87, 81);
-            this.btnDoiMK1.TabIndex = 2;
-            this.btnDoiMK1.Text = "                                                 Đổi Mật Khẩu";
-            this.btnDoiMK1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDoiMK1.UseCompatibleTextRendering = true;
-            this.btnDoiMK1.UseVisualStyleBackColor = false;
-            // 
-            // btnThongTinBanThan
-            // 
-            this.btnThongTinBanThan.BackColor = System.Drawing.Color.White;
-            this.btnThongTinBanThan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTinBanThan.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnThongTinBanThan.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTinBanThan.Image")));
-            this.btnThongTinBanThan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnThongTinBanThan.Location = new System.Drawing.Point(3, 13);
-            this.btnThongTinBanThan.Name = "btnThongTinBanThan";
-            this.btnThongTinBanThan.Size = new System.Drawing.Size(87, 81);
-            this.btnThongTinBanThan.TabIndex = 1;
-            this.btnThongTinBanThan.Text = "                                                 Thông Tin Bản Thân";
-            this.btnThongTinBanThan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnThongTinBanThan.UseCompatibleTextRendering = true;
-            this.btnThongTinBanThan.UseVisualStyleBackColor = false;
             // 
             // tabPage1
             // 
@@ -423,7 +357,7 @@
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(590, 121);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Trang Chính";
@@ -626,7 +560,6 @@
             this.groupBox5.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -647,7 +580,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button btnRThanhVien;
         private System.Windows.Forms.Button btnRTraSach;
@@ -670,9 +602,6 @@
         public System.Windows.Forms.Button btnDoiMK;
         public System.Windows.Forms.Button btnThongTin;
         public System.Windows.Forms.GroupBox groupBox3;
-        public System.Windows.Forms.Button btnThongTinNV;
-        public System.Windows.Forms.Button btnDoiMK1;
-        public System.Windows.Forms.Button btnThongTinBanThan;
         public System.Windows.Forms.Button btnDSNV;
         public System.Windows.Forms.Button BtnDangXuat;
         public System.Windows.Forms.Button btnLogin;
