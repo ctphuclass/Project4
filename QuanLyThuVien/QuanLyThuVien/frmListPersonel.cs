@@ -73,7 +73,10 @@ namespace QuanLyThuVien
 
         private void bttimkiemnhanvien_Click(object sender, EventArgs e)
         {
-            
+           NhanVien_BO NVBO = new NhanVien_BO();
+            NVBO.HoTenNV = tbtknv.Text;
+            List<NhanVien_BO> DSTKS = NhanVien_BL.TimKiemNhanVienBL(NVBO);
+            LuoiDuLieuNhanVien.DataSource = DSTKS;
         }
 
         //Button Thêm

@@ -15,6 +15,12 @@ namespace BusinessLogic
             NhanVien_DA NVDA = new NhanVien_DA();
             return NVDA.HamNV();
         }
+        
+        public static List<NhanVien_BO> TimKiemNhanVienBL(NhanVien_BO ParaTKNV)
+        {
+            NhanVien_DA TKNVDA = new NhanVien_DA();
+            return TKNVDA.TimKiemNhanVien(ParaTKNV);
+        }
 
         public static bool Them(NhanVien_BO NhanVien)
         {

@@ -14,8 +14,10 @@ namespace DataAccess
     {
        public static SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["VIDO"].ToString());
         List<NhanVien_BO> listNV = new List<NhanVien_BO>();
-        
+        List<NhanVien_BO> listTKNV = new List<NhanVien_BO>();
+
         DataTable dt = new DataTable();
+        DataTable dtTK = new DataTable();
         #region
         public List<NhanVien_BO> HamNV()
         {
@@ -138,6 +140,46 @@ namespace DataAccess
                 conn.Close();
             }
             return true;
+        }
+        #endregion
+
+        //Hàm Tìm Kiếm Nhân Viên
+        #region
+        public List<NhanVien_BO>TimKiemNhanVien(NhanVien_BO ParaTKNV)
+        {
+            NhanVien_BO TimKiemNV;
+            try
+            {
+                string query = string.Format("Exec TimKiemNV @TenNV = N'%{0}%'", ParaTKNV.HoTenNV);
+                SqlCommand cmdTK = new SqlCommand(query, conn);
+                conn.Open();
+
+                SqlDataAdapter SqldaTKNV = new SqlDataAdapter(cmdTK);
+                SqldaTKNV.Fill(dt);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                   TimKiemNV = new NhanVien_BO();
+                    TimKiemNV.MaNV = dt.Rows[i]["MaNV"].ToString();
+                    TimKiemNV.HoTenNV = dt.Rows[i]["HoTen"].ToString();
+                    TimKiemNV.GioiTinh = dt.Rows[i]["GioiTinh"].ToString();
+                    TimKiemNV.NgaySinh = DateTime.Parse(dt.Rows[i]["NgaySinh"].ToString());
+                    TimKiemNV.SoDienThoai = dt.Rows[i]["DienThoai"].ToString();
+                    TimKiemNV.DiaChi = dt.Rows[i]["DiaChi"].ToString();
+                    TimKiemNV.Email = dt.Rows[i]["Email"].ToString();
+                    TimKiemNV.NgayVaoLam = DateTime.Parse(dt.Rows[i]["NgayVaoLam"].ToString());
+                    listTKNV.Add(TimKiemNV);
+                }
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return listTKNV;
         }
         #endregion
     }
