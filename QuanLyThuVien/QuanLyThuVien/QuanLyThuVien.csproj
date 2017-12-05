@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsImage.cs" />
+    <Compile Include="frmDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMK.designer.cs">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListPersonel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,8 +77,17 @@
     <Compile Include="frmSeach.Designer.cs">
       <DependentUpon>frmSeach.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThongTinCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongTinCN.designer.cs">
+      <DependentUpon>frmThongTinCN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDoiMK.resx">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListPersonel.resx">
       <DependentUpon>frmListPersonel.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeach.resx">
       <DependentUpon>frmSeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongTinCN.resx">
+      <DependentUpon>frmThongTinCN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -43,6 +43,7 @@
     <Compile Include="NhanVien_BO.cs" />
     <Compile Include="ResultMessageBO.cs" />
     <Compile Include="SeachBO.cs" />
+    <Compile Include="ThongTinCN.cs" />
     <Compile Include="UserBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserPermissionBO.cs" />

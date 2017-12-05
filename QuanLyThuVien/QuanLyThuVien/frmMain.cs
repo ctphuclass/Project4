@@ -35,10 +35,10 @@ namespace QuanLyThuVien
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmMain fMain = new frmMain();
             fLogin.ShowDialog();
             if (fLogin.UserID > 0)
             {
+                this.UserID = fLogin.UserID;
                 listPermission = userBL.GetPermission(fLogin.UserID, "MAIN");
                 CheckPermission();
                 BtnDangXuat.Enabled = true;
@@ -111,6 +111,19 @@ namespace QuanLyThuVien
         private void btnDSNV_Click(object sender, EventArgs e)
         {
             NhanVien.ShowDialog();
+        }
+
+        private void btnThongTin_Click(object sender, EventArgs e)
+        {
+            frmThongTinCN frmTT = new frmThongTinCN();
+            frmTT.UserID = this.UserID;
+            frmTT.ShowDialog();
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            frmDoiMK frmDMK = new frmDoiMK();
+            frmDMK.ShowDialog();
         }
 
         private void frmMain_Load(object sender, EventArgs e)

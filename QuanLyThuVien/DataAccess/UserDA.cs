@@ -88,5 +88,50 @@ using System.Data;
         }
         return list;
     }
+    public List<ThongTinCN> ThongTinCN(int UserID)
+    {
+        List<ThongTinCN> listTT = new List<ThongTinCN>();
+        ThongTinCN TT;
+        try
+        {
+            SqlCommand cmd = new SqlCommand("ThongTinUser", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("UserID", UserID);
+            con.Open();
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                TT = new ThongTinCN();
+                if (reader["MaNV"].ToString() == "")
+                {
+                    TT.MaCN = reader["MaTV"].ToString();
+                }
+                else
+                {
+                    TT.MaCN = reader["MaNV"].ToString();
+                }
+                TT.HoTen = reader["HoTen"].ToString();
+                TT.GioiTinh = reader["GioiTinh"].ToString();
+                TT.NgaySinh = DateTime.Parse(reader["NgaySinh"].ToString());
+                TT.SDT = int.Parse(reader["DienThoai"].ToString());
+                TT.Emial = reader["Email"].ToString();
+                listTT.Add(TT);
+            }
+            reader.Close();
+            cmd.Dispose();
+        }
+        catch
+        {
+            listTT = null;
+        }
+        finally
+        {
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
+        return listTT;
+    }
 }
 
