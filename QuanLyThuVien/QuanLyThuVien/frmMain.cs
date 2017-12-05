@@ -35,18 +35,16 @@ namespace QuanLyThuVien
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmMain fMain = new frmMain();
             fLogin.ShowDialog();
             if (fLogin.UserID > 0)
             {
+                this.UserID = fLogin.UserID;
                 listPermission = userBL.GetPermission(fLogin.UserID, "MAIN");
                 CheckPermission();
                 BtnDangXuat.Enabled = true;
                 btnLogin.Enabled = false;
                 btnDoiMK.Enabled = true;
                 btnThongTin.Enabled = true;
-                btnDoiMK1.Enabled = true;
-                btnThongTinBanThan.Enabled = true;
             }
         }
         Random ramdom = new Random();
@@ -79,12 +77,9 @@ namespace QuanLyThuVien
             fLogin.tbTenDangNhap.Text = "";
             fLogin.tbMK.Text = "";
             btnThongTin.Enabled = false;
-            btnThongTinBanThan.Enabled = false;
             btnDSNV.Enabled = false;
             BtnDangXuat.Enabled = false;
-            btnDoiMK1.Enabled = false;
             btnDoiMK.Enabled = false;
-            btnThongTinNV.Enabled = false;
             btnTTTTV.Enabled = false;
             btnTTS.Enabled = false;
             btnPhieuMuon.Enabled = false;
@@ -113,15 +108,25 @@ namespace QuanLyThuVien
             NhanVien.ShowDialog();
         }
 
+        private void btnThongTin_Click(object sender, EventArgs e)
+        {
+            frmThongTinCN frmTT = new frmThongTinCN();
+            frmTT.UserID = this.UserID;
+            frmTT.ShowDialog();
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            frmDoiMK frmDMK = new frmDoiMK();
+            frmDMK.ShowDialog();
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             btnDoiMK.Enabled = false;
             btnThongTin.Enabled = false;
-            btnThongTinBanThan.Enabled = false;
             btnDSNV.Enabled = false;
             BtnDangXuat.Enabled = false;
-            btnDoiMK1.Enabled = false;
-            btnThongTinNV.Enabled = false;
             btnTTTTV.Enabled = false;
             btnTTS.Enabled = false;
             btnPhieuMuon.Enabled = false;
@@ -139,7 +144,6 @@ namespace QuanLyThuVien
             if (result != null)
             {
                 btnDSNV.Enabled = true;
-                btnThongTinNV.Enabled = true;
                 btnTTTTV.Enabled = true;
                 btnTTS.Enabled = true;
                 btnPhieuMuon.Enabled = true;
@@ -150,49 +154,19 @@ namespace QuanLyThuVien
                 btnLuotMuon.Enabled = true;
                 btnMSQH.Enabled = true;
             }
-            else
+            result = listPermission.Find(item => item.Permission == "TV");
+            if (result != null)
             {
                 btnDSNV.Enabled = false;
-                btnThongTinNV.Enabled = false;
                 btnTTTTV.Enabled = false;
                 btnTTS.Enabled = false;
-                btnPhieuMuon.Enabled = false;
-                btnPhieuTra.Enabled = false;
+                btnPhieuMuon.Enabled = true;
+                btnPhieuTra.Enabled = true;
                 btnRThanhVien.Enabled = false;
                 btnRTraSach.Enabled = false;
                 btnSCM.Enabled = false;
                 btnLuotMuon.Enabled = false;
                 btnMSQH.Enabled = false;
-
-                result = listPermission.Find(item => item.Permission == "TV");
-                if (result != null)
-                {
-                    btnDSNV.Enabled = false;
-                    btnThongTinNV.Enabled = false;
-                    btnTTTTV.Enabled = true;
-                    btnTTS.Enabled = true;
-                    btnPhieuMuon.Enabled = true;
-                    btnPhieuTra.Enabled = true;
-                    btnRThanhVien.Enabled = false;
-                    btnRTraSach.Enabled = false;
-                    btnSCM.Enabled = false;
-                    btnLuotMuon.Enabled = false;
-                    btnMSQH.Enabled = false;
-                }
-                else
-                {
-                    btnDSNV.Enabled = false;
-                    btnThongTinNV.Enabled = false;
-                    btnTTTTV.Enabled = false;
-                    btnTTS.Enabled = false;
-                    btnPhieuMuon.Enabled = false;
-                    btnPhieuTra.Enabled = false;
-                    btnRThanhVien.Enabled = false;
-                    btnRTraSach.Enabled = false;
-                    btnSCM.Enabled = false;
-                    btnLuotMuon.Enabled = false;
-                    btnMSQH.Enabled = false;
-                }
             }
         }
     }
