@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SachDA.cs" />
     <Compile Include="NhanVien_DA.cs" />
     <Compile Include="Seach_DA.cs" />
     <Compile Include="UserDA.cs" />

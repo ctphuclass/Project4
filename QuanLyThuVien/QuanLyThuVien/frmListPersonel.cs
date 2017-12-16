@@ -14,137 +14,139 @@ namespace QuanLyThuVien
 {
     public partial class frmListPersonel : Form
     {
+        List<NhanVien_BO> ls;
+        BindingSource BS;
+        DataGridViewRow dgvrCurrent;
         public frmListPersonel()
         {
             InitializeComponent();
+            Load();
         }
 
-        void LoadNV()
-        {
-            List<NhanVien_BO> DSTCNV = NhanVien_BL.DanhSachNhanVien();
-            LuoiDuLieuNhanVien.DataSource = DSTCNV;
-        }
-
-        //Load Dữ Liệu Và Thiết Kế Soure
-        #region
         private void frmListPersonel_Load(object sender, EventArgs e)
         {
-            LoadNV();
-            LuoiDuLieuNhanVien.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
-            LuoiDuLieuNhanVien.Columns["MaNV"].Width = 100;
-            LuoiDuLieuNhanVien.Columns["HoTenNV"].HeaderText = "Họ Tên";
-            LuoiDuLieuNhanVien.Columns["GioiTinh"].HeaderText = "Giới Tính";
-            LuoiDuLieuNhanVien.Columns["GioiTinh"].Width = 60;
-            LuoiDuLieuNhanVien.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
-            LuoiDuLieuNhanVien.Columns["NgaySinh"].Width = 80;
-            LuoiDuLieuNhanVien.Columns["SoDienThoai"].HeaderText = "Số Điện Thoại";
-            LuoiDuLieuNhanVien.Columns["SoDienThoai"].Width = 100;
-            LuoiDuLieuNhanVien.Columns["DiaChi"].HeaderText = "Địa Chỉ";
-            LuoiDuLieuNhanVien.Columns["DiaChi"].Width = 80;
-            LuoiDuLieuNhanVien.Columns["NgayVaoLam"].HeaderText = "Ngày Vào Làm";
-            LuoiDuLieuNhanVien.Columns["NgayVaoLam"].Width = 100;
-        }
-        #endregion
 
-        //Đưa Dữ Liệu Từ Soure Vào TextBox
-        #region
-        private void LuoiDuLieuNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
-            DataGridViewRow dgrv = LuoiDuLieuNhanVien.CurrentRow;
-            tbMaNhanVien.Text = dgrv.Cells["MaNV"].Value.ToString();
-            tbHoTenNhanVien.Text = dgrv.Cells["HoTenNV"].Value.ToString();
-            tbGioiTinh.Text = dgrv.Cells["GioiTinh"].Value.ToString();
-            if(tbGioiTinh.Text == "True")
+            try
             {
-                tbGioiTinh.Text = "Nam";
+                NhanVien_BO NhanVien = new NhanVien_BO();
+                NhanVien_BL BL = new NhanVien_BL();
+                NhanVien.MaNV = "";
+                NhanVien.HoTen = "";
+                NhanVien.GioiTinh = "";
+                NhanVien.NgaySinh = DateTime.Now;
+                NhanVien.DienThoai = "";
+                NhanVien.DiaChi = "";
+                NhanVien.Email = "";
+                NhanVien.NgayVaoLam = DateTime.Now;
+                List<NhanVien_BO> ls = (List<NhanVien_BO>)BS.DataSource;
+                ls.Add(NhanVien);
+                BS = new BindingSource { DataSource = ls };
+                dtgv1.DataSource = BS;
+                if (dgvrCurrent.IsNewRow == false)
+                {
+                    MessageBox.Show("Thêm Thành Công!");
+                }
+                else
+                {
+                    MessageBox.Show("Thêm Thất Bại!");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                tbGioiTinh.Text = "Nữ";
+                MessageBox.Show(ex.Message);
             }
-            tbSoDienThoai.Text = dgrv.Cells["SoDienThoai"].Value.ToString();
-            tbDiaChi.Text = dgrv.Cells["DiaChi"].Value.ToString();
-            tbEmail.Text = dgrv.Cells["Email"].Value.ToString();
-            DTPNgaySinh.Text = dgrv.Cells["NgaySinh"].Value.ToString();
-            DTPNgayVaoLam.Text = dgrv.Cells["NgayVaoLam"].Value.ToString();
         }
-        #endregion
-
-
-        private void bttimkiemnhanvien_Click(object sender, EventArgs e)
+        public void Load()
         {
-           NhanVien_BO NVBO = new NhanVien_BO();
-            NVBO.HoTenNV = tbtknv.Text;
-            List<NhanVien_BO> DSTKS = NhanVien_BL.TimKiemNhanVienBL(NVBO);
-            LuoiDuLieuNhanVien.DataSource = DSTKS;
+            NhanVien_BL BL = new NhanVien_BL();
+            ls = BL.DanhSachNhanVien();
+            BS = new BindingSource { DataSource = ls };
+            dtgv1.DataSource = BS;
         }
 
-        //Button Thêm
-        #region
-        private void btThem_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             NhanVien_BO NhanVien = new NhanVien_BO();
+            NhanVien_BL BL = new NhanVien_BL();
             NhanVien.MaNV = tbMaNhanVien.Text;
-            NhanVien.HoTenNV = tbHoTenNhanVien.Text;
+            NhanVien.HoTen = tbHoTenNhanVien.Text;
             NhanVien.GioiTinh = tbGioiTinh.Text;
-            NhanVien.NgaySinh = DateTime.Parse(DTPNgaySinh.Text);
-            NhanVien.SoDienThoai = tbSoDienThoai.Text;
+            NhanVien.NgaySinh = DTPNgaySinh.Value;
+            NhanVien.DienThoai = tbSoDienThoai.Text;
             NhanVien.DiaChi = tbDiaChi.Text;
             NhanVien.Email = tbEmail.Text;
-            NhanVien.NgayVaoLam = DateTime.Parse(DTPNgayVaoLam.Text);
-            if (NhanVien_BL.Them(NhanVien) == true)
+            NhanVien.NgayVaoLam = DTPNgayVaoLam.Value;
+            BL.Sua(NhanVien);
+            Load();
+            if (BL.Sua(NhanVien) == true)
             {
-                MessageBox.Show("Them thanh cong");
+                MessageBox.Show("Sửa Thành Công!");
             }
             else
-                MessageBox.Show("them that bai");
-            LoadNV();
+            {
+                MessageBox.Show("Sửa Thất Bại!");
+            }
         }
-        #endregion
 
-        //Button Sửa
-        #region
-        private void btSua_Click(object sender, EventArgs e)
+        private void dtgv1_CurrentCellChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvrCurrent = dtgv1.CurrentRow;
+                if (dgvrCurrent != null)
+                {
+                    tbMaNhanVien.Text = dgvrCurrent.Cells["MaNV"].Value.ToString();
+                    tbHoTenNhanVien.Text= dgvrCurrent.Cells["HoTen"].Value.ToString();
+                    tbGioiTinh.Text= dgvrCurrent.Cells["GioiTinh"].Value.ToString();
+                    DTPNgaySinh.Text=dgvrCurrent.Cells["NgaySinh"].Value.ToString();
+                    tbGioiTinh.Text= dgvrCurrent.Cells["GioiTinh"].Value.ToString();
+                    tbGioiTinh.Text = dgvrCurrent.Cells["DienThoai"].Value.ToString();
+                    tbDiaChi.Text= dgvrCurrent.Cells["DiaChi"].Value.ToString();
+                    tbEmail.Text= dgvrCurrent.Cells["Email"].Value.ToString();
+                    DTPNgayVaoLam.Text= dgvrCurrent.Cells["NgayVaoLam"].Value.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             NhanVien_BO NhanVien = new NhanVien_BO();
-            NhanVien.HoTenNV = tbHoTenNhanVien.Text;
-            NhanVien.GioiTinh = tbGioiTinh.Text;
-            NhanVien.NgaySinh = DateTime.Parse(DTPNgaySinh.Text);
-            NhanVien.SoDienThoai = tbSoDienThoai.Text;
-            NhanVien.DiaChi = tbDiaChi.Text;
-            NhanVien.Email = tbEmail.Text;
-            NhanVien.NgayVaoLam = DateTime.Parse(DTPNgayVaoLam.Text);
+            NhanVien_BL BL = new NhanVien_BL();
             NhanVien.MaNV = tbMaNhanVien.Text;
-            if(NhanVien_BL.Sua(NhanVien) == true)
+            BL.Xoa(NhanVien);
+            Load();
+            if (BL.Xoa(NhanVien) == true)
             {
-                MessageBox.Show("Sửa Thành Công!", "Thông báo");
+                MessageBox.Show("Xóa Thành Công!");
             }
             else
             {
-                MessageBox.Show("Sửa Thất bại!", "Cảnh báo");
-            }
-            LoadNV();
-        }
-        #endregion
+                MessageBox.Show("Xóa Thất Bại!");
 
-        private void btXoa_Click(object sender, EventArgs e)
-        {
-            NhanVien_BO NhanVien = new NhanVien_BO();
-            NhanVien.MaNV = tbMaNhanVien.Text;
-            if (NhanVien_BL.Sua(NhanVien) == true)
-            {
-                MessageBox.Show("Xóa Thành Công!", "Thông báo");
             }
-            else
-            {
-                MessageBox.Show("Xóa Thất bại!", "Cảnh báo");
-            }
-            LoadNV();
         }
 
-        private void btThoat_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            NhanVien_BO NhanVien = new NhanVien_BO();
+            NhanVien_BL BL = new NhanVien_BL();
+            NhanVien.MaNV = tbTimKiemNV.Text;
+            List<NhanVien_BO> ls = BL.TimNV(NhanVien);
+            dtgv1.DataSource = ls;
+        }
     }
+     
 }

@@ -10,31 +10,27 @@ namespace BusinessLogic
 {
     public class NhanVien_BL
     {
-        public static List<NhanVien_BO> DanhSachNhanVien()
+        public List<NhanVien_BO> DanhSachNhanVien()
         {
             NhanVien_DA NVDA = new NhanVien_DA();
-            return NVDA.HamNV();
-        }
-        
-        public static List<NhanVien_BO> TimKiemNhanVienBL(NhanVien_BO ParaTKNV)
-        {
-            NhanVien_DA TKNVDA = new NhanVien_DA();
-            return TKNVDA.TimKiemNhanVien(ParaTKNV);
+            return NVDA.LoadNV();
         }
 
-        public static bool Them(NhanVien_BO NhanVien)
+        public bool Sua(NhanVien_BO NhanVien)
         {
-            return NhanVien_DA.ThemNV(NhanVien); 
+            NhanVien_DA NVDA = new NhanVien_DA();
+            return NVDA.UpdateNhanVien(NhanVien);
         }
 
-        public static bool Sua(NhanVien_BO NhanVien)
+        public bool Xoa(NhanVien_BO NhanVien)
         {
-            return NhanVien_DA.UpdateNhanVien(NhanVien);
+            NhanVien_DA NVDA = new NhanVien_DA();
+            return NVDA.XoaNhanVien(NhanVien);
         }
-
-        public static bool Xoa(NhanVien_BO NhanVien)
+        public List<NhanVien_BO> TimNV(NhanVien_BO NhanVien)
         {
-            return NhanVien_DA.XoaNhanVien(NhanVien);
+            NhanVien_DA NVDA = new NhanVien_DA();
+            return NVDA.TimNV(NhanVien);
         }
     }
 }

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="NhanVien_BO.cs" />
     <Compile Include="ResultMessageBO.cs" />
+    <Compile Include="SachBO.cs" />
     <Compile Include="SeachBO.cs" />
     <Compile Include="ThongTinCN.cs" />
     <Compile Include="UserBO.cs" />

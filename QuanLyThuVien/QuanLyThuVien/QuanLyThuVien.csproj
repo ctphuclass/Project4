@@ -71,6 +71,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSach.Designer.cs">
+      <DependentUpon>frmQLSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSeach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLSach.resx">
+      <DependentUpon>frmQLSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeach.resx">
       <DependentUpon>frmSeach.cs</DependentUpon>

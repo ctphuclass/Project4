@@ -133,5 +133,40 @@ using System.Data;
         }
         return listTT;
     }
+    public ResultMessageBO ChangePass(UserBO ObjBO) // passing Bussiness object Here
+    {
+        ResultMessageBO result = new ResultMessageBO();
+        try
+        {
+            SqlCommand cmd = new SqlCommand("usp_USER_ChangePassword", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@psUsername", ObjBO.Username);
+            cmd.Parameters.AddWithValue("@psPassword", ObjBO.Password);
+            cmd.Parameters.AddWithValue("@psChangePasword", ObjBO.ChangePassword);
+            cmd.Parameters.AddWithValue("@pResultCode", result.ResultCode);
+            cmd.Parameters.AddWithValue("@pResultMessage", result.ResultMessage);
+            cmd.Parameters["@pResultCode"].Direction = ParameterDirection.Output;
+            cmd.Parameters["@pResultMessage"].Direction = ParameterDirection.Output;
+            cmd.Parameters["@pResultMessage"].Size = 50;
+            con.Open();
+            cmd.ExecuteNonQuery();
+            result.ResultCode = (int)cmd.Parameters["@pResultCode"].Value;
+            result.ResultMessage = cmd.Parameters["@pResultMessage"].Value.ToString();
+            cmd.Dispose();
+        }
+        catch (Exception ex)
+        {
+            result.ResultCode = -1;
+            result.ResultMessage = ex.Message;
+        }
+        finally
+        {
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
+        return result;
+    }
 }
 

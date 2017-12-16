@@ -8,117 +8,13 @@ namespace BusinessObject
 {
     public class NhanVien_BO
     {
-        private string maNV;
-        private string hoTenNV;
-        private string gioiTinh;
-        private DateTime ngaySinh;
-        private string soDienThoai;
-        private string diaChi;
-        private string email;
-        private DateTime ngayVaoLam;
-
-        public string MaNV
-        {
-            get
-            {
-                return maNV;
-            }
-
-            set
-            {
-                maNV = value;
-            }
-        }
-
-        public string HoTenNV
-        {
-            get
-            {
-                return hoTenNV;
-            }
-
-            set
-            {
-                hoTenNV = value;
-            }
-        }
-
-        public string GioiTinh
-        {
-            get
-            {
-                return gioiTinh;
-            }
-
-            set
-            {
-                gioiTinh = value;
-            }
-        }
-
-        public DateTime NgaySinh
-        {
-            get
-            {
-                return ngaySinh;
-            }
-
-            set
-            {
-                ngaySinh = value;
-            }
-        }
-
-        public string SoDienThoai
-        {
-            get
-            {
-                return soDienThoai;
-            }
-
-            set
-            {
-                soDienThoai = value;
-            }
-        }
-
-        public string DiaChi
-        {
-            get
-            {
-                return diaChi;
-            }
-
-            set
-            {
-                diaChi = value;
-            }
-        }
-
-        public string Email
-        {
-            get
-            {
-                return email;
-            }
-
-            set
-            {
-                email = value;
-            }
-        }
-
-        public DateTime NgayVaoLam
-        {
-            get
-            {
-                return ngayVaoLam;
-            }
-
-            set
-            {
-                ngayVaoLam = value;
-            }
-        }
+        public string MaNV { get; set; }
+        public string HoTen { get; set; }
+        public string GioiTinh { get; set; }
+        public DateTime NgaySinh { get; set; }
+        public string DienThoai { get; set; }
+        public string DiaChi { get; set; }
+        public string Email { get; set; }
+        public DateTime NgayVaoLam { get; set; }
     }
 }

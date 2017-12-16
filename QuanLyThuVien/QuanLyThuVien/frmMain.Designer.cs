@@ -91,13 +91,13 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage5.Controls.Add(this.groupBox8);
             this.tabPage5.Location = new System.Drawing.Point(4, 24);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(590, 121);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Reports";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -144,13 +144,13 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage4.Controls.Add(this.groupBox7);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(590, 121);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Tìm Kiếm";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -181,6 +181,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage3.Controls.Add(this.groupBox6);
             this.tabPage3.Controls.Add(this.groupBox5);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
@@ -189,7 +190,6 @@
             this.tabPage3.Size = new System.Drawing.Size(590, 121);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mượn Trả";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -296,6 +296,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
@@ -304,7 +305,6 @@
             this.tabPage2.Size = new System.Drawing.Size(590, 121);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản Lý";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -332,6 +332,7 @@
             this.btnTTS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTTS.UseCompatibleTextRendering = true;
             this.btnTTS.UseVisualStyleBackColor = false;
+            this.btnTTS.Click += new System.EventHandler(this.btnTTS_Click);
             // 
             // btnTTTTV
             // 
@@ -351,7 +352,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -539,7 +540,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(596, 558);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -548,6 +549,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "Quản Lý Thư Viện";
             this.Load += new System.EventHandler(this.frmMain_Load);

@@ -45,5 +45,17 @@ namespace BusinessLogic
                 throw;
             }
         }
+        public ResultMessageBO ChangeUserLoginBL(UserBO objUserBL)
+        {
+            try
+            {
+                UserDA objUserda = new UserDA(); // Creating object of Dataccess
+                return objUserda.ChangePass(objUserBL); // calling Method of DataAccess
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }

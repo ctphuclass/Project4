@@ -121,6 +121,12 @@ namespace QuanLyThuVien
             frmDMK.ShowDialog();
         }
 
+        private void btnTTS_Click(object sender, EventArgs e)
+        {
+            frmQLSach QLS = new frmQLSach();
+            QLS.ShowDialog();
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             btnDoiMK.Enabled = false;
