@@ -47,11 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsImage.cs" />
+    <Compile Include="frmDanhSachPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachPhieuMuon.Designer.cs">
+      <DependentUpon>frmDanhSachPhieuMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDoiMK.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDoiMK.designer.cs">
       <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhoSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhoSach.Designer.cs">
+      <DependentUpon>frmKhoSach.cs</DependentUpon>
     </Compile>
     <Compile Include="frmListPersonel.cs">
       <SubType>Form</SubType>
@@ -70,6 +82,12 @@
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuMuon.Designer.cs">
+      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQLSach.cs">
       <SubType>Form</SubType>
@@ -91,8 +109,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDanhSachPhieuMuon.resx">
+      <DependentUpon>frmDanhSachPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDoiMK.resx">
       <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhoSach.resx">
+      <DependentUpon>frmKhoSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListPersonel.resx">
       <DependentUpon>frmListPersonel.cs</DependentUpon>
@@ -102,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuMuon.resx">
+      <DependentUpon>frmPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLSach.resx">
       <DependentUpon>frmQLSach.cs</DependentUpon>

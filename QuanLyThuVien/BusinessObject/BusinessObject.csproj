@@ -40,10 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KhoSach_BO.cs" />
     <Compile Include="NhanVien_BO.cs" />
+    <Compile Include="PhieuMuon_BO.cs" />
     <Compile Include="ResultMessageBO.cs" />
     <Compile Include="SachBO.cs" />
     <Compile Include="SeachBO.cs" />
+    <Compile Include="ThanhVienMuonSach_BO.cs" />
     <Compile Include="ThongTinCN.cs" />
     <Compile Include="UserBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

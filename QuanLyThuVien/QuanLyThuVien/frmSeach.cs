@@ -62,5 +62,16 @@ namespace QuanLyThuVien
         {
            
         }
+
+        private void LuoiDuLieu_Seach_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmPhieuMuon PM = new frmPhieuMuon();
+            DataGridViewRow dr = LuoiDuLieu_Seach.CurrentRow;
+            if (dr.Cells["MaSach"].Selected == true)
+            {
+                PM.Show();
+                PM.tbMaSach.Text = dr.Cells["MaSach"].Value.ToString();
+            }
+        }
     }
 }

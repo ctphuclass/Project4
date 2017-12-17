@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PhieuMuon_BL.cs" />
+    <Compile Include="QL_PhieuMuon_BL.cs" />
     <Compile Include="SachBL.cs" />
     <Compile Include="NhanVien_BL.cs" />
     <Compile Include="Seach_BL.cs" />

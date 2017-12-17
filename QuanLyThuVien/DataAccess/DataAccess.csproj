@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PhieuMuon_DA.cs" />
+    <Compile Include="QL_PhieuMuon_DA.cs" />
     <Compile Include="SachDA.cs" />
     <Compile Include="NhanVien_DA.cs" />
     <Compile Include="Seach_DA.cs" />

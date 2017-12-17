@@ -127,6 +127,24 @@ namespace QuanLyThuVien
             QLS.ShowDialog();
         }
 
+        private void btnPhieuMuon_Click(object sender, EventArgs e)
+        {
+            frmPhieuMuon PM = new frmPhieuMuon();
+            PM.ShowDialog();
+        }
+
+        private void btnLuotMuon_Click(object sender, EventArgs e)
+        {
+            frmDanhSachPhieuMuon DSPM = new frmDanhSachPhieuMuon();
+            DSPM.ShowDialog();
+        }
+
+        private void btnSCM_Click(object sender, EventArgs e)
+        {
+            frmKhoSach KS = new frmKhoSach();
+            KS.ShowDialog();
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             btnDoiMK.Enabled = false;
