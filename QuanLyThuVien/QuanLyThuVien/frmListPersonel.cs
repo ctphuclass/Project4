@@ -21,11 +21,18 @@ namespace QuanLyThuVien
         {
             InitializeComponent();
             Load();
+            dtgv1.Columns["MaNV"].HeaderText = "Mã Nhân Viên";
+            dtgv1.Columns["HoTen"].HeaderText = "Họ Tên";
+            dtgv1.Columns["GioiTinh"].HeaderText = "Giới Tính";
+            dtgv1.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+            dtgv1.Columns["DienThoai"].HeaderText = "Số Điện Thoại";
+            dtgv1.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+            dtgv1.Columns["NgayVaoLam"].HeaderText = "Ngày Vào Làm";
         }
 
         private void frmListPersonel_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
