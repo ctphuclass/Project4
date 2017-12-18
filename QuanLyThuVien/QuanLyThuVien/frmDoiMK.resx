@@ -120,17 +120,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnOK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAB30lEQVQ4T5WS3UtTYRzHjxdZ
-        DLwcCF6EUKDQlcRkzSbNF+ZL4t8xFL3qqhAiU6O68CIIlCHeqVSX5rCciDhb5daLa66tM9/Atdezs81p
-        +/Z7nm1HHTujLj4853n5fH+/5+EIABQ2Hl8upY6wEmEChXGK0BL8TKUAs2NME/u1NABJXMSf431Iuzaw
-        Oa0f0b6JnbsQcC6olg6FY74FZH/PIhMcQmqnHxlxENnQDOK+uWKIVi3AKtoGkdm9R2Ifx/+6kV0B/lcN
-        SAcsCL6zsPmLcgHVtHGYDDzLy967kL292HyiQTbyho/J751IeIZZwF65ANYB0uIjyD96IHu6iS78XLjO
-        O/DNX4P0xUR0sfmxWsBRKvAA8raZV0t+64D0tY2kO0i4W5HYMiLqNKh38HHyKlL++yS2k0jV3CS6mHgb
-        8c8GxD/dwsHyzfJvYJ8wIB2cQNTRxKsmXEYSWwqiHjFnMyIOHT48rZEooF5VLr4+a59V5uKmDvtvb8Ax
-        foXJHcTZf/B+TE/yqCKzF3dP6xToMOOQeEnUM0cJWBk3QBYfXpBzp3EuFgsQVee+OTyAt31gVa1cKpVQ
-        JdifG5ESR5Q7505jlcRLpWvC6mQb0qE1nCTXkY3a/rWyglAU/lfMA+EvFrnMnmHu1PIAAAAASUVORK5C
-        YII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHfSURBVDhPlZLdS1NhHMePF1kMvBwIXoRQoNCVxGTN
+        Js0X5kvi3zEUveqqECJTo7rwIgiUId6pVJfmsJyIOFvl1otrrq0z38C117OzzWn79nuebUcdO6MuPjzn
+        efl8f7/n4QgAFDYeXy6ljrASYQKFcYrQEvxMpQCzY0wT+7U0AElcxJ/jfUi7NrA5rR/RvomduxBwLqiW
+        DoVjvgVkf88iExxCaqcfGXEQ2dAM4r65YohWLcAq2gaR2b1HYh/H/7qRXQH+Vw1IBywIvrOw+YtyAdW0
+        cZgMPMvL3ruQvb3YfKJBNvKGj8nvnUh4hlnAXrkA1gHS4iPIP3oge7qJLvxcuM478M1fg/TFRHSx+bFa
+        wFEq8ADytplXS37rgPS1jaQ7SLhbkdgyIuo0qHfwcfIqUv77JLaTSNXcJLqYeBvxzwbEP93CwfLN8m9g
+        nzAgHZxA1NHEqyZcRhJbCqIeMWczIg4dPjytkSigXlUuvj5rn1Xm4qYO+29vwDF+hckdxNl/8H5MT/Ko
+        IrMXd0/rFOgw45B4SdQzRwlYGTdAFh9ekHOncS4WCxBV5745PIC3fWBVrVwqlVAl2J8bkRJHlDvnTmOV
+        xEula8LqZBvSoTWcJNeRjdr+tbKCUBT+V8wD4S8WucyeYe7U8gAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnThoat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

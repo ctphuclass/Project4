@@ -73,5 +73,21 @@ namespace QuanLyThuVien
                 PM.tbMaSach.Text = dr.Cells["MaSach"].Value.ToString();
             }
         }
+
+        private void tbtimkiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbtimkiem_Click(object sender, EventArgs e)
+        {
+            tbtimkiem.Clear();
+        }
+
+        private void frmSeach_Click(object sender, EventArgs e)
+        {
+            LuoiDuLieu_Seach.Focus();
+            tbtimkiem.Text = "Tìm kiếm theo mã sách hoặc tên sách...";
+        }
     }
 }

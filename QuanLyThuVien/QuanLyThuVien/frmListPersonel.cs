@@ -111,7 +111,7 @@ namespace QuanLyThuVien
                     tbGioiTinh.Text= dgvrCurrent.Cells["GioiTinh"].Value.ToString();
                     DTPNgaySinh.Text=dgvrCurrent.Cells["NgaySinh"].Value.ToString();
                     tbGioiTinh.Text= dgvrCurrent.Cells["GioiTinh"].Value.ToString();
-                    tbGioiTinh.Text = dgvrCurrent.Cells["DienThoai"].Value.ToString();
+                    tbSoDienThoai.Text = dgvrCurrent.Cells["DienThoai"].Value.ToString();
                     tbDiaChi.Text= dgvrCurrent.Cells["DiaChi"].Value.ToString();
                     tbEmail.Text= dgvrCurrent.Cells["Email"].Value.ToString();
                     DTPNgayVaoLam.Text= dgvrCurrent.Cells["NgayVaoLam"].Value.ToString();

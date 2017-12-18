@@ -45,11 +45,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Forte", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("MercuriusScript", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(106, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 30);
+            this.label7.Size = new System.Drawing.Size(203, 35);
             this.label7.TabIndex = 15;
             this.label7.Text = "Đổi Mật Khẩu";
             // 
@@ -126,8 +126,7 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 23;
-            this.btnThoat.Text = "Đóng";
-            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThoat.Text = "     Đóng";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.button1_Click);
             // 

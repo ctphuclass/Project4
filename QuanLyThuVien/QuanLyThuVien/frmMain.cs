@@ -170,8 +170,8 @@ namespace QuanLyThuVien
                 btnDSNV.Enabled = true;
                 btnTTTTV.Enabled = true;
                 btnTTS.Enabled = true;
-                btnPhieuMuon.Enabled = true;
-                btnPhieuTra.Enabled = true;
+                btnPhieuMuon.Enabled = false;
+                btnPhieuTra.Enabled = false;
                 btnRThanhVien.Enabled = true;
                 btnRTraSach.Enabled = true;
                 btnSCM.Enabled = true;
@@ -188,7 +188,7 @@ namespace QuanLyThuVien
                 btnPhieuTra.Enabled = true;
                 btnRThanhVien.Enabled = false;
                 btnRTraSach.Enabled = false;
-                btnSCM.Enabled = false;
+                btnSCM.Enabled = true;
                 btnLuotMuon.Enabled = false;
                 btnMSQH.Enabled = false;
             }

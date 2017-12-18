@@ -227,10 +227,10 @@
             this.btTimKiem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btTimKiem.Image")));
             this.btTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTimKiem.Location = new System.Drawing.Point(455, 17);
+            this.btTimKiem.Location = new System.Drawing.Point(455, 13);
             this.btTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btTimKiem.Name = "btTimKiem";
-            this.btTimKiem.Size = new System.Drawing.Size(89, 27);
+            this.btTimKiem.Size = new System.Drawing.Size(89, 35);
             this.btTimKiem.TabIndex = 1;
             this.btTimKiem.Text = "Tìm Kiếm";
             this.btTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
