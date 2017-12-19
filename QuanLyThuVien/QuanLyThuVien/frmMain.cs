@@ -151,6 +151,30 @@ namespace QuanLyThuVien
             ReportTV.ShowDialog();
         }
 
+        private void btnTTTTV_Click(object sender, EventArgs e)
+        {
+            frmThanhVien TV = new frmThanhVien();
+            TV.ShowDialog();
+        }
+
+        private void btnMSQH_Click(object sender, EventArgs e)
+        {
+            frmSachQuaHan SQH = new frmSachQuaHan();
+            SQH.ShowDialog();
+        }
+
+        private void btnRTraSach_Click(object sender, EventArgs e)
+        {
+            frmReportSach RS = new frmReportSach();
+            RS.ShowDialog();
+        }
+
+        private void btnPhieuTra_Click(object sender, EventArgs e)
+        {
+            frmPhieuTra PT = new frmPhieuTra();
+            PT.ShowDialog();
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             btnDoiMK.Enabled = false;

@@ -14,6 +14,8 @@ namespace QuanLyThuVien
 {
     public partial class frmDanhSachPhieuMuon : Form
     {
+        List<TraSachBO> ls;
+        BindingSource BS;
         public frmDanhSachPhieuMuon()
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace QuanLyThuVien
         private void frmDanhSachPhieuMuon_Load(object sender, EventArgs e)
         {
             LoadThanhVienM();
+            LoadTraSach();
             LuoiThongTinPhieuMuon.Columns["MaPhieu"].HeaderText = "Mã Phiếu";
             LuoiThongTinPhieuMuon.Columns["MaPhieu"].Width = 75;
             LuoiThongTinPhieuMuon.Columns["MaSach"].HeaderText = "Mã Sách";
@@ -50,6 +53,13 @@ namespace QuanLyThuVien
         {
             List<ThanhVienMuonSach_BO> DanhSachTVM = QL_PhieuMuon_BL.LoadTVMuon();
             LuoiThongTinPhieuMuon.DataSource = DanhSachTVM;
+        }
+        public void LoadTraSach()
+        {
+            TraSachBL BL = new TraSachBL();
+            ls = BL.LoadTraSach();
+            BS = new BindingSource { DataSource = ls };
+            dataGridView1.DataSource = BS;
         }
     }
 }

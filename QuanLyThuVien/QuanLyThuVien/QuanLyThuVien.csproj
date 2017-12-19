@@ -53,7 +53,7 @@
     <Compile Include="frmDanhSachPhieuMuon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDanhSachPhieuMuon.Designer.cs">
+    <Compile Include="frmDanhSachPhieuMuon.designer.cs">
       <DependentUpon>frmDanhSachPhieuMuon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDoiMK.cs">
