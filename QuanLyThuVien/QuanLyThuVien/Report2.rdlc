@@ -6,31 +6,25 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.80833in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.66167in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.65499in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.56167in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.88333in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.88333in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>1in</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.85in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -118,7 +112,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Tên Sách</Value>
+                              <Value>Số Lượng</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -154,7 +148,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Giá</Value>
+                              <Value>Ngày Trả</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -190,7 +184,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ngày Nhập</Value>
+                              <Value>Phạt Hư Hỏng</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -226,7 +220,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ngày Trả</Value>
+                              <Value>Phạt Quá Hạn</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -262,78 +256,6 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Phạt Hư Hỏng</Value>
-                              <Style>
-                                <FontFamily>Verdana</FontFamily>
-                                <FontSize>7pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>White</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox13</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>#622424</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>#4e0000</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox15">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Phạt Quá Hạn</Value>
-                              <Style>
-                                <FontFamily>Verdana</FontFamily>
-                                <FontSize>7pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                                <Color>White</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox15</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>#622424</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>#4e0000</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox17">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
                               <Value>Mã Nhân Viên</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
@@ -346,7 +268,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox17</rd:DefaultName>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>#622424</Color>
@@ -434,14 +356,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="TenSach">
+                    <Textbox Name="SoLuong">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!TenSach.Value</Value>
+                              <Value>=Sum(Fields!SoLuong.Value)</Value>
                               <Style>
                                 <FontFamily>Verdana</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -451,73 +373,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>TenSach</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>#e5e5e5</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Gia">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Sum(Fields!Gia.Value)</Value>
-                              <Style>
-                                <FontFamily>Verdana</FontFamily>
-                                <FontSize>7pt</FontSize>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Gia</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>#e5e5e5</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="NgayNhap">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!NgayNhap.Value</Value>
-                              <Style>
-                                <FontFamily>Verdana</FontFamily>
-                                <FontSize>7pt</FontSize>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>NgayNhap</rd:DefaultName>
+                      <rd:DefaultName>SoLuong</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>#e5e5e5</Color>
@@ -676,8 +532,6 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
-            <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -690,16 +544,159 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
-        <Left>0.16249in</Left>
+        <DataSetName>DataSet3</DataSetName>
+        <Top>0.02778in</Top>
+        <Left>0.08125in</Left>
         <Height>0.5in</Height>
-        <Width>9in</Width>
+        <Width>6.30333in</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox28">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!PhatQuaHan.Value)</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox28</rd:DefaultName>
+        <Top>0.96667in</Top>
+        <Left>5.54847in</Left>
+        <Height>0.23611in</Height>
+        <Width>0.88333in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Color>#e5e5e5</Color>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox27">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!PhatHuHong.Value)</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>7pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox27</rd:DefaultName>
+        <Top>0.95278in</Top>
+        <Left>4.66513in</Left>
+        <Height>0.25in</Height>
+        <Width>0.88333in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Color>#e5e5e5</Color>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox14">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Tổng Hư Hỏng</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>0.70278in</Top>
+        <Left>4.66513in</Left>
+        <Height>0.25in</Height>
+        <Width>0.88333in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Color>#622424</Color>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>#4e0000</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Tổng Quá Hạn</Value>
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>0.70278in</Top>
+        <Left>5.54847in</Left>
+        <Height>0.25in</Height>
+        <Width>0.88333in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Color>#622424</Color>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>#4e0000</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>2in</Height>
     <Style />
@@ -707,7 +704,7 @@
   <Width>9.32499in</Width>
   <Page>
     <PageHeader>
-      <Height>3.17167in</Height>
+      <Height>3.20778in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -715,6 +712,7 @@
           <Source>Embedded</Source>
           <Value>images</Value>
           <Sizing>Fit</Sizing>
+          <Left>0.08125in</Left>
           <Height>1.63in</Height>
           <Width>9.1625in</Width>
           <Style>
@@ -752,8 +750,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox19</rd:DefaultName>
-          <Top>1.63in</Top>
-          <Left>1.83748in</Left>
+          <Top>1.65778in</Top>
+          <Left>1.75624in</Left>
           <Height>0.25in</Height>
           <Width>3.04167in</Width>
           <ZIndex>1</ZIndex>
@@ -784,8 +782,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox20</rd:DefaultName>
-          <Top>1.88in</Top>
-          <Left>2.16249in</Left>
+          <Top>1.90778in</Top>
+          <Left>2.08125in</Left>
           <Height>0.25in</Height>
           <Width>2.37in</Width>
           <ZIndex>2</ZIndex>
@@ -832,8 +830,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox21</rd:DefaultName>
-          <Top>2.13in</Top>
-          <Left>2.52082in</Left>
+          <Top>2.15778in</Top>
+          <Left>2.43958in</Left>
           <Height>0.25in</Height>
           <Width>1.64167in</Width>
           <ZIndex>3</ZIndex>
@@ -866,8 +864,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox24</rd:DefaultName>
-          <Top>2.86333in</Top>
-          <Left>0.16249in</Left>
+          <Top>2.92722in</Top>
+          <Left>0.08125in</Left>
           <Height>0.25278in</Height>
           <Width>2.125in</Width>
           <ZIndex>4</ZIndex>
@@ -897,7 +895,6 @@
           <Source>Embedded</Source>
           <Value>footer</Value>
           <Sizing>FitProportional</Sizing>
-          <Top>0in</Top>
           <Height>1.61667in</Height>
           <Width>9.32499in</Width>
           <Style>
@@ -921,72 +918,36 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="QuanLyThuVienDataSet1">
+    <DataSource Name="QuanLyThuVienDataSet3">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>0326c706-d5e7-44db-9e18-17fb00b59425</rd:DataSourceID>
+      <rd:DataSourceID>05a53225-479e-4a32-b04c-a1fb88769d9d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="DataSet3">
       <Query>
-        <DataSourceName>QuanLyThuVienDataSet1</DataSourceName>
+        <DataSourceName>QuanLyThuVienDataSet3</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="MaSach">
-          <DataField>MaSach</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="TenSach">
-          <DataField>TenSach</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SoTrang">
-          <DataField>SoTrang</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Gia">
-          <DataField>Gia</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-        <Field Name="SoLuong">
-          <DataField>SoLuong</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NgayNhap">
-          <DataField>NgayNhap</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="MaNXB">
-          <DataField>MaNXB</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MaTG">
-          <DataField>MaTG</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MaTL">
-          <DataField>MaTL</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="TinhTrang">
-          <DataField>TinhTrang</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
         <Field Name="MaPhieu">
           <DataField>MaPhieu</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MaSach1">
-          <DataField>MaSach1</DataField>
+        <Field Name="MaSach">
+          <DataField>MaSach</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="MaNV">
           <DataField>MaNV</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SoLuong">
+          <DataField>SoLuong</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="SachTraNgay">
           <DataField>SachTraNgay</DataField>
@@ -1002,12 +963,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>QuanLyThuVienDataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\i_com\Source\Repos\Project4\QuanLyThuVien\QuanLyThuVien\QuanLyThuVienDataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>DataTable1</rd:TableName>
+        <rd:DataSetName>QuanLyThuVienDataSet3</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\i_com\Source\Repos\Project4\QuanLyThuVien\QuanLyThuVien\QuanLyThuVienDataSet3.xsd</rd:SchemaPath>
+        <rd:TableName>TRASACH</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>DataTable1TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>TRASACHTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -1099,5 +1060,5 @@ fi5gZvdZiF2rackv5W/12H9v7jQZPdZtxmo+VLaDzk/koMHNic/QVYf/AN3S+UX8dLX9815P+2iZaWt0
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>8a774509-fc54-4496-b2a8-d5ad6f7fef7d</rd:ReportID>
+  <rd:ReportID>23504ce3-9446-49fb-a23b-6fdcdd367eef</rd:ReportID>
 </Report>

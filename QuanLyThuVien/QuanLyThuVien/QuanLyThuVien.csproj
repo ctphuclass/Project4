@@ -157,6 +157,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThuVienDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyThuVienDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyThuVienDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmDanhSachPhieuMuon.resx">
       <DependentUpon>frmDanhSachPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +276,17 @@
     </None>
     <None Include="QuanLyThuVienDataSet2.xss">
       <DependentUpon>QuanLyThuVienDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThuVienDataSet3.xsc">
+      <DependentUpon>QuanLyThuVienDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyThuVienDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyThuVienDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyThuVienDataSet3.xss">
+      <DependentUpon>QuanLyThuVienDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Resources\bgLogo.gif" />
   </ItemGroup>

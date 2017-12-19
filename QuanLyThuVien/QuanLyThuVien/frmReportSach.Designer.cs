@@ -43,10 +43,15 @@
             this.DataTable1TableAdapter = new QuanLyThuVien.QuanLyThuVienDataSet1TableAdapters.DataTable1TableAdapter();
             this.THANHVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.THANHVIENTableAdapter = new QuanLyThuVien.QuanLyThuVienDataSet1TableAdapters.THANHVIENTableAdapter();
+            this.QuanLyThuVienDataSet3 = new QuanLyThuVien.QuanLyThuVienDataSet3();
+            this.TRASACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TRASACHTableAdapter = new QuanLyThuVien.QuanLyThuVienDataSet3TableAdapters.TRASACHTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.THANHVIENBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TRASACHBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // DataTable1BindingSource
@@ -128,8 +133,8 @@
             // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.DataTable1BindingSource;
+            reportDataSource1.Name = "DataSet3";
+            reportDataSource1.Value = this.TRASACHBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "QuanLyThuVien.Report2.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 136);
@@ -150,6 +155,20 @@
             // 
             this.THANHVIENTableAdapter.ClearBeforeFill = true;
             // 
+            // QuanLyThuVienDataSet3
+            // 
+            this.QuanLyThuVienDataSet3.DataSetName = "QuanLyThuVienDataSet3";
+            this.QuanLyThuVienDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TRASACHBindingSource
+            // 
+            this.TRASACHBindingSource.DataMember = "TRASACH";
+            this.TRASACHBindingSource.DataSource = this.QuanLyThuVienDataSet3;
+            // 
+            // TRASACHTableAdapter
+            // 
+            this.TRASACHTableAdapter.ClearBeforeFill = true;
+            // 
             // frmReportSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,6 +184,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.THANHVIENBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TRASACHBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -184,5 +205,8 @@
         private QuanLyThuVienDataSet1TableAdapters.DataTable1TableAdapter DataTable1TableAdapter;
         private System.Windows.Forms.BindingSource THANHVIENBindingSource;
         private QuanLyThuVienDataSet1TableAdapters.THANHVIENTableAdapter THANHVIENTableAdapter;
+        private System.Windows.Forms.BindingSource TRASACHBindingSource;
+        private QuanLyThuVienDataSet3 QuanLyThuVienDataSet3;
+        private QuanLyThuVienDataSet3TableAdapters.TRASACHTableAdapter TRASACHTableAdapter;
     }
 }
