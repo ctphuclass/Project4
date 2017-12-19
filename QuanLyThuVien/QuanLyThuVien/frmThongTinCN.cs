@@ -52,10 +52,11 @@ namespace QuanLyThuVien
         {
             ThongTinCN TT = new ThongTinCN();
             UserBL BL = new UserBL();
+            TT.MaCN = tbMa.Text;
             TT.HoTen = tbHoTen.Text;
             TT.NgaySinh =dtNgaySinh.Value;
             TT.GioiTinh = tbGT.Text;
-            TT.SDT =int.Parse(tbSDT.Text);
+            TT.SDT =tbSDT.Text;
             TT.Emial = tbEmail.Text;
             BL.UpdateTV(TT);
             if(BL.UpdateTV(TT)==true)

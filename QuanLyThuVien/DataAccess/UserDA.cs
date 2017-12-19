@@ -113,7 +113,7 @@ using System.Data;
                 TT.HoTen = reader["HoTen"].ToString();
                 TT.GioiTinh = reader["GioiTinh"].ToString();
                 TT.NgaySinh = DateTime.Parse(reader["NgaySinh"].ToString());
-                TT.SDT = int.Parse(reader["DienThoai"].ToString());
+                TT.SDT = reader["DienThoai"].ToString();
                 TT.Emial = reader["Email"].ToString();
                 listTT.Add(TT);
             }

@@ -12,7 +12,7 @@ namespace BusinessObject
         public string HoTen { get; set; }
         public DateTime NgaySinh { get; set; }
         public string Emial { get; set; }
-        public int SDT { get; set; }
+        public string SDT { get; set; }
         public string GioiTinh { get; set; }
     }
 }
