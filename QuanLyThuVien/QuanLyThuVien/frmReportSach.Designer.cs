@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportSach));
+            this.TRASACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.QuanLyThuVienDataSet3 = new QuanLyThuVien.QuanLyThuVienDataSet3();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.QuanLyThuVienDataSet1 = new QuanLyThuVien.QuanLyThuVienDataSet1();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -43,16 +46,24 @@
             this.DataTable1TableAdapter = new QuanLyThuVien.QuanLyThuVienDataSet1TableAdapters.DataTable1TableAdapter();
             this.THANHVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.THANHVIENTableAdapter = new QuanLyThuVien.QuanLyThuVienDataSet1TableAdapters.THANHVIENTableAdapter();
-            this.QuanLyThuVienDataSet3 = new QuanLyThuVien.QuanLyThuVienDataSet3();
-            this.TRASACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TRASACHTableAdapter = new QuanLyThuVien.QuanLyThuVienDataSet3TableAdapters.TRASACHTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.TRASACHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.THANHVIENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TRASACHBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // TRASACHBindingSource
+            // 
+            this.TRASACHBindingSource.DataMember = "TRASACH";
+            this.TRASACHBindingSource.DataSource = this.QuanLyThuVienDataSet3;
+            // 
+            // QuanLyThuVienDataSet3
+            // 
+            this.QuanLyThuVienDataSet3.DataSetName = "QuanLyThuVienDataSet3";
+            this.QuanLyThuVienDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // DataTable1BindingSource
             // 
@@ -72,9 +83,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(9, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(773, 118);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(636, 96);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Báo Cáo Danh Sách Thành Viên Sử Dụng Thư Viện";
@@ -82,52 +95,58 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(414, 66);
+            this.dateTimePicker2.Location = new System.Drawing.Point(310, 54);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker2.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(333, 71);
+            this.label4.Location = new System.Drawing.Point(250, 58);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 17);
+            this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Đến Ngày:";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(107, 66);
+            this.dateTimePicker1.Location = new System.Drawing.Point(80, 54);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 66);
+            this.label3.Location = new System.Drawing.Point(26, 54);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Từ Ngày:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 33);
+            this.label2.Location = new System.Drawing.Point(13, 27);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(230, 17);
+            this.label2.Size = new System.Drawing.Size(174, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Thông Tin Báo Cáo Trong 1 Tháng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 98);
+            this.label1.Location = new System.Drawing.Point(4, 80);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 17);
+            this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hiển Thị Báo Cáo";
             // 
@@ -137,9 +156,10 @@
             reportDataSource1.Value = this.TRASACHBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "QuanLyThuVien.Report2.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 136);
+            this.reportViewer1.Location = new System.Drawing.Point(9, 110);
+            this.reportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(773, 421);
+            this.reportViewer1.Size = new System.Drawing.Size(636, 396);
             this.reportViewer1.TabIndex = 3;
             // 
             // DataTable1TableAdapter
@@ -155,37 +175,29 @@
             // 
             this.THANHVIENTableAdapter.ClearBeforeFill = true;
             // 
-            // QuanLyThuVienDataSet3
-            // 
-            this.QuanLyThuVienDataSet3.DataSetName = "QuanLyThuVienDataSet3";
-            this.QuanLyThuVienDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // TRASACHBindingSource
-            // 
-            this.TRASACHBindingSource.DataMember = "TRASACH";
-            this.TRASACHBindingSource.DataSource = this.QuanLyThuVienDataSet3;
-            // 
             // TRASACHTableAdapter
             // 
             this.TRASACHTableAdapter.ClearBeforeFill = true;
             // 
             // frmReportSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 569);
+            this.ClientSize = new System.Drawing.Size(656, 517);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmReportSach";
-            this.Text = "frmReportSach";
+            this.Text = "Báo Cáo Trả Sách";
             this.Load += new System.EventHandler(this.frmReportSach_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.TRASACHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.THANHVIENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.QuanLyThuVienDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TRASACHBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

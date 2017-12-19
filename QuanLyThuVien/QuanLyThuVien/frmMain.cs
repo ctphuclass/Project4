@@ -55,7 +55,7 @@ namespace QuanLyThuVien
             {
                 x += a;
                 label1.Location = new Point(x, y);
-                if (x > 250)
+                if (x > 152)
                 {
                     a = -1;
                     label1.ForeColor = Color.FromArgb(ramdom.Next(0, 255), ramdom.Next(0, 255), ramdom.Next(0, 255));
