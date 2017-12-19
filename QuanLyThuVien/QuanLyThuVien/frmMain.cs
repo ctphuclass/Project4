@@ -145,6 +145,12 @@ namespace QuanLyThuVien
             KS.ShowDialog();
         }
 
+        private void btnRThanhVien_Click(object sender, EventArgs e)
+        {
+            frmReportNhanVien ReportTV = new frmReportNhanVien();
+            ReportTV.ShowDialog();
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             btnDoiMK.Enabled = false;

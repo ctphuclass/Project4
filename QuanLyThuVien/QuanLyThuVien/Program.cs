@@ -16,7 +16,7 @@ namespace QuanLyThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmMain fM = new frmMain();
+            frmReportSach fM = new frmReportSach();
             Application.Run(fM);
         }
     }
