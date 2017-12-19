@@ -33,9 +33,9 @@ namespace QuanLyThuVien
             PhieuMuon_BO PhieuMuonS = new PhieuMuon_BO();
             PhieuMuonS.MaPhieu = tbMaPhieuMuon.Text;
             PhieuMuonS.MaThanhVien = tbMaThanhVien.Text;
-            PhieuMuonS.NgayMuon = DateTime.Parse(dtpNgayMuon.Text);
+            PhieuMuonS.NgayMuon = dtpNgayMuon.Value;
             PhieuMuonS.MaNhanVien = "NV0001";
-            PhieuMuonS.NgayTra = DateTime.Parse(dtpNgayTra.Text);
+            PhieuMuonS.NgayTra = dtpNgayTra.Value;
             PhieuMuonS.MaSach = tbMaSach.Text;
             PhieuMuonS.SoLuong = int.Parse(tbSoLuong.Text);
             if (PhieuMuon_BL.PhieuMuon(PhieuMuonS) == true)

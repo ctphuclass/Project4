@@ -31,6 +31,7 @@ namespace QuanLyThuVien
             dataGridView1.DataSource = dt;
             tbPhatHH.Text = "0";
             tbPhatQH.Text = "0";
+            tbSoLuong.Text = "0";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,6 +71,11 @@ namespace QuanLyThuVien
                     MessageBox.Show(ex.ToString());
                 }
             }
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
