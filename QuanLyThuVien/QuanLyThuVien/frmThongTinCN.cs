@@ -39,12 +39,34 @@ namespace QuanLyThuVien
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             this.Close();
         }
 
         private void frmThongTinCN_Load(object sender, EventArgs e)
         {
             TT();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ThongTinCN TT = new ThongTinCN();
+            UserBL BL = new UserBL();
+            TT.HoTen = tbHoTen.Text;
+            TT.NgaySinh =dtNgaySinh.Value;
+            TT.GioiTinh = tbGT.Text;
+            TT.SDT =int.Parse(tbSDT.Text);
+            TT.Emial = tbEmail.Text;
+            BL.UpdateTV(TT);
+            if(BL.UpdateTV(TT)==true)
+            {
+                MessageBox.Show("Sửa Thành Công!");
+            }
+            else
+            {
+                MessageBox.Show("Sửa Thất Bại!");
+            }
+
         }
     }
 }

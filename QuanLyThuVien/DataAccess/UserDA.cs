@@ -168,5 +168,33 @@ using System.Data;
         }
         return result;
     }
+    public bool UpdateTT(ThongTinCN s)
+    {
+        try
+        {
+            SqlCommand cmd = new SqlCommand("updateThongTin", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Ma", s.MaCN);
+            cmd.Parameters.AddWithValue("@HoTen", s.HoTen);
+            cmd.Parameters.AddWithValue("@Email", s.Emial);
+            cmd.Parameters.AddWithValue("@GioiTinh", s.GioiTinh);
+            cmd.Parameters.AddWithValue("@NgaySinh", s.NgaySinh);
+            cmd.Parameters.AddWithValue("@DienThoai", s.SDT);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+        finally
+        {
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
+    }
 }
 

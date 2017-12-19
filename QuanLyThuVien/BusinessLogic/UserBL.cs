@@ -57,5 +57,10 @@ namespace BusinessLogic
                 throw;
             }
         }
+        public bool UpdateTV(ThongTinCN s)
+        {
+            UserDA DA = new UserDA();
+            return DA.UpdateTT(s);
+        }
     }
 }
