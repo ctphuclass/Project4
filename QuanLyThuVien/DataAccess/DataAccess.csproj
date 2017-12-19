@@ -43,9 +43,12 @@
   <ItemGroup>
     <Compile Include="PhieuMuon_DA.cs" />
     <Compile Include="QL_PhieuMuon_DA.cs" />
+    <Compile Include="QL_PhieuTra_DA.cs" />
     <Compile Include="SachDA.cs" />
     <Compile Include="NhanVien_DA.cs" />
+    <Compile Include="SachQH_DA.cs" />
     <Compile Include="Seach_DA.cs" />
+    <Compile Include="ThanhVien_DA.cs" />
     <Compile Include="UserDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

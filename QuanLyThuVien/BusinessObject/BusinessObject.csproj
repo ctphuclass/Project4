@@ -45,9 +45,12 @@
     <Compile Include="PhieuMuon_BO.cs" />
     <Compile Include="ResultMessageBO.cs" />
     <Compile Include="SachBO.cs" />
+    <Compile Include="SachQH_BO.cs" />
     <Compile Include="SeachBO.cs" />
     <Compile Include="ThanhVienMuonSach_BO.cs" />
+    <Compile Include="ThanhVien_BO.cs" />
     <Compile Include="ThongTinCN.cs" />
+    <Compile Include="TraSachBO.cs" />
     <Compile Include="UserBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserPermissionBO.cs" />

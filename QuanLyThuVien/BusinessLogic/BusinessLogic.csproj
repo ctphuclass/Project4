@@ -44,7 +44,10 @@
     <Compile Include="QL_PhieuMuon_BL.cs" />
     <Compile Include="SachBL.cs" />
     <Compile Include="NhanVien_BL.cs" />
+    <Compile Include="SachQH_BL.cs" />
     <Compile Include="Seach_BL.cs" />
+    <Compile Include="ThanhVien_BL.cs" />
+    <Compile Include="TraSachBL.cs" />
     <Compile Include="UserBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
