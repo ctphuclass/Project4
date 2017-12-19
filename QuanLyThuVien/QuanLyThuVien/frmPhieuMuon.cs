@@ -16,6 +16,8 @@ namespace QuanLyThuVien
 {
     public partial class frmPhieuMuon : Form
     {
+        public int UserID;
+        List<ThongTinCN> ls = new List<ThongTinCN>();
         public frmPhieuMuon()
         {
             InitializeComponent();
@@ -42,6 +44,14 @@ namespace QuanLyThuVien
             }
             else
                 MessageBox.Show("them that bai");
+        }
+
+        private void frmPhieuMuon_Load(object sender, EventArgs e)
+        {
+            UserBL userBL = new UserBL();
+            ThongTinCN TT = new ThongTinCN();
+            ls = userBL.ThongTinCN(UserID);
+            tbMaThanhVien.Text = ls[0].MaCN;
         }
     }
 }

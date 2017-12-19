@@ -130,6 +130,7 @@ namespace QuanLyThuVien
         private void btnPhieuMuon_Click(object sender, EventArgs e)
         {
             frmPhieuMuon PM = new frmPhieuMuon();
+            PM.UserID = this.UserID;
             PM.ShowDialog();
         }
 

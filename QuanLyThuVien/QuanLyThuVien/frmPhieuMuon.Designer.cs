@@ -48,7 +48,8 @@
             // 
             // dtpNgayTra
             // 
-            this.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayTra.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayTra.Location = new System.Drawing.Point(349, 167);
             this.dtpNgayTra.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNgayTra.Name = "dtpNgayTra";
@@ -57,7 +58,8 @@
             // 
             // dtpNgayMuon
             // 
-            this.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayMuon.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayMuon.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayMuon.Location = new System.Drawing.Point(101, 167);
             this.dtpNgayMuon.Margin = new System.Windows.Forms.Padding(2);
             this.dtpNgayMuon.Name = "dtpNgayMuon";
@@ -122,6 +124,7 @@
             // 
             // tbMaThanhVien
             // 
+            this.tbMaThanhVien.Enabled = false;
             this.tbMaThanhVien.Location = new System.Drawing.Point(101, 126);
             this.tbMaThanhVien.Margin = new System.Windows.Forms.Padding(2);
             this.tbMaThanhVien.Multiline = true;
@@ -222,6 +225,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPhieuMuon";
             this.Text = "Phiếu Mượn Sách";
+            this.Load += new System.EventHandler(this.frmPhieuMuon_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
